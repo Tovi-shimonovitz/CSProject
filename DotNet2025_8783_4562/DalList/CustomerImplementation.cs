@@ -11,7 +11,7 @@ class CustomerImplementation : ICustomer
         foreach (Customer c in Customers)
         {
             if (c.CustomerId == id)
-                throw new Exception("this customer already exists");
+                throw new Exception("this customer already exists exeption");
         }
         Customers.Add(item);
         return id;
