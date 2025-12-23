@@ -18,19 +18,36 @@ class CustomerImplementation : ICustomer
     }
     public Customer? Read(int id)
     {
-        return null;
+        Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
+        if (c == null)
+            throw new Exception("notContainThisIdException");
+        return c;
     }
     public List<Customer?> ReadAll()
     {
-        return null;
+        List<Customer?> list = new List<Customer>();
+
+        foreach (Customer c in Customers)
+        {
+            list.Add(c);
+        }
+        return list;
     }
     public void Update(Customer item)
     {
+        Customer? c = Customers.SingleOrDefault(i => item.CustomerId == i.CustomerId);
+        if (c == null)
+            throw new Exception("notContainThisIdException");
+        Customers.Remove(c);
+        Customers.Add(item);
 
     }
     public void Delete(int id)
     {
-
+        Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
+        if (c == null)
+            throw new Exception("notContainThisIdException");
+        Customers.Remove(c);
     }
 
 }
