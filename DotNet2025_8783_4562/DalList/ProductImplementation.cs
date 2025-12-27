@@ -19,7 +19,7 @@ internal class ProductImplementation:IProduct
     {
         Product? p = Products.SingleOrDefault(i => id == i.ProductId);
         if(p == null) 
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisIdException");
         return p;
     }
     public List<Product?> ReadAll()
@@ -36,7 +36,7 @@ internal class ProductImplementation:IProduct
     {
         Product? p = Products.SingleOrDefault(i => item.ProductId == i.ProductId);
         if (p == null)
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisIdException");
         Products.Remove(p);
         Products.Add(item);
         
@@ -45,7 +45,7 @@ internal class ProductImplementation:IProduct
     {
         Product? p = Products.SingleOrDefault(i => id == i.ProductId);
         if (p == null)
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisIdException");
         Products.Remove(p);
 
     }

@@ -23,7 +23,7 @@ class SaleImplementation : ISale
         Sale? s = Sales.SingleOrDefault(s => s.SaleId == id);
         if (s == null)
         {
-            throw new KeyNotFoundException($"this  sale not exists");
+            throw new ObjectNotFoundExeption($"this  sale not exists");
         }
         return s;
     }
@@ -40,7 +40,7 @@ class SaleImplementation : ISale
     {
         Sale? existing = Sales.SingleOrDefault(s => s.SaleId == item.SaleId);
         if (existing is null)
-            throw new KeyNotFoundException($"Sale with Id {item.SaleId} not found.");
+            throw new ObjectNotFoundExeption($"Sale with Id {item.SaleId} not found.");
 
         Delete(item.SaleId);
         Sales.Add(item);
@@ -51,7 +51,7 @@ class SaleImplementation : ISale
         Sale? s = Sales.SingleOrDefault(s => s.SaleId == id);
         if (s is null)
         {
-            throw new KeyNotFoundException($"Sale with Id {id} not found.");
+            throw new ObjectNotFoundExeption($"Sale with Id {id} not found.");
         }
         Sales.Remove(s);
     }
