@@ -3,7 +3,7 @@ using DO;
 using static Dal.DataSource;
 
 namespace Dal;
-class CustomerImplementation : ICustomer
+internal class CustomerImplementation : ICustomer
 {
     public int Create(Customer item)
     {

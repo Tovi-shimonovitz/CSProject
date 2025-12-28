@@ -9,3 +9,15 @@ Z:\יד תשפו\שמעונוביץ טובה\c#\הפרויקט של טובי ש�
 Z:\יד תשפו\שמעונוביץ טובה\c#\הפרויקט של טובי שמעונוביץ ויהודית סטרו\DotNet2025_8783_4562\DalFacade\obj\Debug\refint\DalFacade.dll
 Z:\יד תשפו\שמעונוביץ טובה\c#\הפרויקט של טובי שמעונוביץ ויהודית סטרו\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.pdb
 Z:\יד תשפו\שמעונוביץ טובה\c#\הפרויקט של טובי שמעונוביץ ויהודית סטרו\DotNet2025_8783_4562\DalFacade\obj\Debug\ref\DalFacade.dll
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalFacade.deps.json
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalFacade.dll
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalFacade.pdb
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.AssemblyInfo.cs
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.sourcelink.json
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.dll
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\refint\DalFacade.dll
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\DalFacade.pdb
+C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalFacade\obj\Debug\ref\DalFacade.dll

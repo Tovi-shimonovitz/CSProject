@@ -5,7 +5,7 @@ using static Dal.DataSource;
 
 namespace Dal;
 
-class SaleImplementation : ISale
+internal class SaleImplementation : ISale
 {
 
     public int Create(Sale item)

@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/DalFacade.dll": {}
         }
+      },
+      "DalList/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DalFacade": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DalList.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DalList.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../DalFacade/DalFacade.csproj",
       "msbuildProject": "../DalFacade/DalFacade.csproj"
+    },
+    "DalList/1.0.0": {
+      "type": "project",
+      "path": "../DalList/DalList.csproj",
+      "msbuildProject": "../DalList/DalList.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DalFacade >= 1.0.0"
+      "DalFacade >= 1.0.0",
+      "DalList >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -61,6 +80,9 @@
           "projectReferences": {
             "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalFacade\\DalFacade.csproj": {
               "projectPath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalFacade\\DalFacade.csproj"
+            },
+            "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalList\\DalList.csproj": {
+              "projectPath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalList\\DalList.csproj"
             }
           }
         }
