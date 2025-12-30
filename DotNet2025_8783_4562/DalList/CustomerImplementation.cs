@@ -9,7 +9,10 @@ internal class CustomerImplementation : ICustomer
     {
         int id = item.CustomerId;
         foreach (Customer c in Customers)
+
         {
+
+
             if (c.CustomerId == id)
                 throw new ObjectExistExeption ("this customer already exists exeption");
         }
