@@ -12,3 +12,17 @@ C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרו�
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\refint\DalList.dll
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.pdb
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\ref\DalList.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalList.deps.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalList.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\bin\DalList.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.sourcelink.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\refint\DalList.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\DalList.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקטC#\CSProject\DotNet2025_8783_4562\DalList\obj\Debug\ref\DalList.dll

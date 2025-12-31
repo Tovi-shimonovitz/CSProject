@@ -11,7 +11,7 @@ internal class CustomerImplementation : ICustomer
         foreach (Customer c in Customers)
         {
             if (c.CustomerId == id)
-                throw new Exception("this customer already exists exeption");
+                throw new ObjectExistExeption ("this customer already exists exeption");
         }
         Customers.Add(item);
         return id;
@@ -20,7 +20,7 @@ internal class CustomerImplementation : ICustomer
     {
         Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
         if (c == null)
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisIdException");
         return c;
     }
     public List<Customer?> ReadAll()
@@ -37,7 +37,7 @@ internal class CustomerImplementation : ICustomer
     {
         Customer? c = Customers.SingleOrDefault(i => item.CustomerId == i.CustomerId);
         if (c == null)
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisId");
         Customers.Remove(c);
         Customers.Add(item);
 
@@ -46,7 +46,7 @@ internal class CustomerImplementation : ICustomer
     {
         Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
         if (c == null)
-            throw new Exception("notContainThisIdException");
+            throw new ObjectNotFoundExeption("notContainThisIdException");
         Customers.Remove(c);
     }
 
