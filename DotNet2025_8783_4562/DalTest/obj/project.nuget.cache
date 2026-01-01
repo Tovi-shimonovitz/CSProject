@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lsv+IbD047g=",
+  "dgSpecHash": "lxsoFahBQNI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalTest\\DalTest.csproj",
+  "projectFilePath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\DalTest\\DalTest.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\DalTest\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
