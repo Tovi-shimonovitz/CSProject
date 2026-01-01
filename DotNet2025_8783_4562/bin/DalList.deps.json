@@ -17,7 +17,11 @@
       "DalFacade/1.0.0": {
         "runtime": {
           "DalFacade.dll": {
+<<<<<<< HEAD
             "assemblyVersion": "1.0.0",
+=======
+            "assemblyVersion": "1.0.0.0",
+>>>>>>> a9d73378de5228db9af5e675e4b39265c7e2bfe5
             "fileVersion": "1.0.0.0"
           }
         }
