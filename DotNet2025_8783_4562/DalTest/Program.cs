@@ -1,6 +1,5 @@
 ﻿using Dal;
 using DalApi;
-using DalList;
 using DO;
 using DO;
 using System.Diagnostics;
@@ -19,6 +18,7 @@ namespace DalTest
             try
             {
                 Initialization.initialize(s_dal);
+                displayMainMenue();
 
             }
             catch (ObjectNotFoundExeption e)
@@ -29,7 +29,6 @@ namespace DalTest
             {
                 Console.WriteLine(e.Message);
             }
-            displayMainMenue();
 
         }
         public static void displayMainMenue()
@@ -39,16 +38,19 @@ namespace DalTest
             Console.WriteLine("customer press 1");
             Console.WriteLine("product press 2");
             Console.WriteLine("sale press 3");
+            Console.WriteLine( "to exit press 4");
             int myChoice = int.Parse(Console.ReadLine());
         
             switch (myChoice)
             {
                 
-                case 1:displayCrud("Customer", s_dal.Customer);
+                   case 1:displayCrud("Customer", s_dal.Customer);
                     break;
                     case 2:displayCrud("Product", s_dal.Product);
                     break;
                     case 3: displayCrud("Sale", s_dal.Sale);
+                    break;
+                case 4:
                     break;
             }
             
@@ -66,17 +68,17 @@ namespace DalTest
             switch (myChoice)
             {
                 case 1:
-                    Create(myChoiceString);
+                    Create(myChoiceString,inter);
                     break;
                 case 2:
-                    Delete<T>(inter);
+                    Delete<T>(myChoiceString,inter);
                     break;
                 case 3:
-                    Update(myChoiceString);
+                    Update(myChoiceString, inter);
                     break;
-                    case 4:Read(inter);
+                    case 4:Read(myChoiceString,inter);
                     break;
-                    case 5: ReadAll(inter);
+                    case 5: ReadAll(myChoiceString,inter);
                     break;
             }
         }
@@ -161,7 +163,7 @@ namespace DalTest
             return new Product(id, ProductName, category, Price, Amount);
         }
 
-        public static  void Create(string whichObject)
+        public static  void Create<T>(string whichObject , ICrud<T> inter)
         {
             if (whichObject == "Customer") {
                 s_dal.Customer.Create(inputCustomer());
@@ -177,9 +179,9 @@ namespace DalTest
                
                 s_dal.Sale.Create(inputSale());
             }
-            displayMainMenue();
+            displayCrud(whichObject,inter);
         }
-        public static void Update(string whichObject) 
+        public static void Update<T>(string whichObject, ICrud<T> inter) 
         {
 
             if (whichObject == "Customer")
@@ -195,29 +197,29 @@ namespace DalTest
 
                 s_dal.Sale.Update(inputSale());
             }
-            displayMainMenue();
+            displayCrud(whichObject, inter);
 
         }
 
-        public static void Delete<T>( ICrud<T> inter)
+        public static void Delete<T>(string whichObject, ICrud<T> inter)
         {
             Console.WriteLine("enter id");
             int id = int.Parse(Console.ReadLine());
             inter.Delete(id);
-            displayMainMenue();
+            displayCrud(whichObject, inter);
 
         }
-        public static void Read<T>(ICrud<T> inter)
+        public static void Read<T>(string whichObject, ICrud<T> inter)
         {
 
             Console.WriteLine("enter id");
             int id = int.Parse(Console.ReadLine());
             Console.WriteLine(inter.Read(id));
-            displayMainMenue();
+            displayCrud(whichObject, inter);
 
         }
 
-        public static void ReadAll<T>(ICrud<T> inter)
+        public static void ReadAll<T>(string whichObject, ICrud<T> inter)
         {
 
             var customers = inter.ReadAll();
@@ -226,7 +228,8 @@ namespace DalTest
             {
                 Console.WriteLine(customer.ToString());
             }
-            displayMainMenue();
+            displayCrud(whichObject, inter);
+
 
         }
 

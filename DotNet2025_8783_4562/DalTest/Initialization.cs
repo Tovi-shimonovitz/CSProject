@@ -21,7 +21,7 @@ public static class  Initialization
         s_dal.Customer.Create(new Customer(3,"rnh","rerynd","465132"));
         s_dal.Customer.Create(new Customer(4,"nebtrg","etnbr","98654"));
     }
-    public static void creatProduct()
+    public static void creatProduct()//TODO
     {
         s_dal.Product.Create(new Product(1,"pinkWatch",Category.WATCH,100,30));
         s_dal.Product.Create(new Product(2, "womenBag", Category.BAG, 200, 20));
