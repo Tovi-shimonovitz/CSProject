@@ -28,12 +28,16 @@ internal class SaleImplementation : ISale
         }
         return s;
     }
-    public List<Sale?> ReadAll()
+
+  
+    public List<Sale?> ReadAll(Func<Sale, bool>? filter = null)
     {
-        var q = from s in Sales select s;
+        var q = from s in Sales where filter != null && filter(s) == true || filter == null select s;
        
         return q.ToList();
     }
+   
+
     public void Update(Sale item)
     {
         Delete(item.SaleId);
@@ -51,5 +55,10 @@ internal class SaleImplementation : ISale
         Sales.Remove(sl);
     }
 
+    public Sale? Read(Func<Sale, bool>? filter)
+    {
+        var q = from s in Sales where filter != null && filter(s) || filter == null select s;
 
+        return q.ToList().FirstOrDefault();
+    }
 }

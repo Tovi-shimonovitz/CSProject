@@ -26,12 +26,20 @@ internal class ProductImplementation:IProduct
             throw new ObjectNotFoundExeption("notContainThisIdException");
         return product;
     }
-    public List<Product?> ReadAll()
+
+    public Product? Read(Func<Product, bool>? filter)
     {
-        var q = from p in Products select p;
+        var q = from p in Products where filter != null && filter(p) || filter == null select p;
+
+        return q.ToList().FirstOrDefault();
+    }
+    public List<Product?> ReadAll(Func<Product, bool>? filter = null)
+    {
+        var q = from p in Products where filter != null && filter(p) == true || filter == null select p;
        
         return q.ToList();
     }
+ 
     public void Update(Product item)
     {
         Delete(item.ProductId);

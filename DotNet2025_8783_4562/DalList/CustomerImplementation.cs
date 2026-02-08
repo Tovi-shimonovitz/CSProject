@@ -26,11 +26,19 @@ internal class CustomerImplementation : ICustomer
             throw new ObjectNotFoundExeption("notContainThisIdException");
         return cu;
     }
-    public List<Customer?> ReadAll()
+    public Customer? Read(Func<Customer, bool>? filter)
     {
-        var q = from c in Customers select c;
-       
-        return q.ToList();
+        var q = from c in Customers where filter!=null && filter(c)||filter==null select c;
+
+        return q.ToList().FirstOrDefault();
+    }
+
+
+    public List<Customer?> ReadAll(Func < Customer,bool>? filter=null)
+    {
+        var q = from c in Customers where filter!=null && filter(c)==true || filter==null select c  ;
+        var list = q.ToList();
+        return list;
     }
     public void Update(Customer item)
     {

@@ -219,6 +219,8 @@ namespace DalTest
 
         }
 
+      
+
         public static void ReadAll<T>(string whichObject, ICrud<T> inter)
         {
 
