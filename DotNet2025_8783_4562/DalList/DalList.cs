@@ -2,9 +2,8 @@
 using DalApi;
 namespace Dal
 {
-    public class DalList:IDal//<T>
+    public class DalList:IDal
     {
-        //  public ICrud<T> Crud { get; }
 
         public ICustomer Customer => new CustomerImplementation();
         public ISale Sale => new SaleImplementation();

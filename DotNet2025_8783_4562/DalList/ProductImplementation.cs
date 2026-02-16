@@ -17,36 +17,44 @@ internal class ProductImplementation:IProduct
     }
     public Product? Read(int id)
     {
-        Product? p = Products.SingleOrDefault(i => id == i.ProductId);
-        if(p == null) 
+        var q = from p in Products
+                where p.ProductId == id
+                select p;
+        Product? product = q.FirstOrDefault();
+  
+        if(product == null) 
             throw new ObjectNotFoundExeption("notContainThisIdException");
-        return p;
+        return product;
     }
-    public List<Product?> ReadAll()
-    {
-        List < Product > list = new List<Product>();
 
-        foreach (Product p in Products)
-        {
-            list.Add(p);
-        }
-        return list;
+    public Product? Read(Func<Product, bool>? filter)
+    {
+        var q = from p in Products where filter != null && filter(p) || filter == null select p;
+
+        return q.ToList().FirstOrDefault();
     }
+    public List<Product?> ReadAll(Func<Product, bool>? filter = null)
+    {
+        var q = from p in Products where filter != null && filter(p) == true || filter == null select p;
+       
+        return q.ToList();
+    }
+ 
     public void Update(Product item)
     {
-        Product? p = Products.SingleOrDefault(i => item.ProductId == i.ProductId);
-        if (p == null)
-            throw new ObjectNotFoundExeption("notContainThisIdException");
-        Products.Remove(p);
+        Delete(item.ProductId);
         Products.Add(item);
         
     }
     public void Delete(int id)
     {
-        Product? p = Products.SingleOrDefault(i => id == i.ProductId);
-        if (p == null)
+        var q=from p in Products
+              where p.ProductId == id
+              select p;
+        Product? product = q.FirstOrDefault();
+        if (product == null)
             throw new ObjectNotFoundExeption("notContainThisIdException");
-        Products.Remove(p);
+        Products.Remove(product);
 
     }
 }

@@ -1,280 +1,237 @@
-﻿using DalApi;
+﻿using Dal;
+using DalApi;
 using DO;
-using DalList;
-
-
-using System.Runtime.CompilerServices;
-using Dal;
-using System.Numerics;
+using DO;
 using System.Diagnostics;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace DalTest
 {
     internal class Program
     {
+        static IDal s_dal = new Dal.DalList();
         static void Main(string[] args)
         {
-            IDal s_dal = new Dal.DalList();
+           
             try
             {
                 Initialization.initialize(s_dal);
+                displayMainMenue();
 
             }
-            catch (Exception e)
+            catch (ObjectNotFoundExeption e)
             {
                 Console.WriteLine(e.Message);
             }
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
-            displayMainMenue();
+            catch (ObjectExistExeption e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
         }
         public static void displayMainMenue()
         {
             Console.WriteLine("hello to the styleGift store");
             Console.WriteLine("your good choice");
-            Console.WriteLine("לקוחות הקש 1");
-            Console.WriteLine("למוצרים הקש 2");
-            Console.WriteLine("למבצעים הקש 3");
+            Console.WriteLine("customer press 1");
+            Console.WriteLine("product press 2");
+            Console.WriteLine("sale press 3");
+            Console.WriteLine( "to exit press 4");
             int myChoice = int.Parse(Console.ReadLine());
-            string myChoiceString = "";
+        
             switch (myChoice)
             {
-                case 1:
-                    myChoiceString = "Customer";
+                
+                   case 1:displayCrud("Customer", s_dal.Customer);
                     break;
-                    case 2:myChoiceString = "Product";
+                    case 2:displayCrud("Product", s_dal.Product);
                     break;
-                    case 3: myChoiceString = "Sale";
+                    case 3: displayCrud("Sale", s_dal.Sale);
+                    break;
+                case 4:
                     break;
             }
-            displayCrud(myChoiceString);
+            
         }
-        public static void displayCrud(string myChoiceString)
+        public static void displayCrud<T>(string myChoiceString, ICrud<T> inter)
         {
-            Console.WriteLine($"ליצירת {myChoiceString}הקש 1");
-            Console.WriteLine($"למחיקת {myChoiceString} הקש 2");
-            Console.WriteLine($"לעדכון {myChoiceString} הקש 3");
-            Console.WriteLine($"להצגת {myChoiceString}הקש 4");
-            Console.WriteLine($"להצגת הרשימה הקש 5");
+            Console.WriteLine($"to create {myChoiceString}press 1");
+            Console.WriteLine($"to delete {myChoiceString} press 2");
+            Console.WriteLine($"to update {myChoiceString} press 3");
+            Console.WriteLine($"to show {myChoiceString}press 4");
+            Console.WriteLine($"to show list press 5");
 
 
             int myChoice = int.Parse(Console.ReadLine());
             switch (myChoice)
             {
                 case 1:
-
-                    inputAndCreate(myChoiceString);
-                    
+                    Create(myChoiceString,inter);
                     break;
                 case 2:
-                    inputAndDelete(myChoiceString);
-
-
+                    Delete<T>(myChoiceString,inter);
                     break;
                 case 3:
-                    inputAndCreate(myChoiceString);
+                    Update(myChoiceString, inter);
                     break;
-                    case 4:ReadObject(myChoiceString);
+                    case 4:Read(myChoiceString,inter);
                     break;
-                    case 5: ReadAllObjects(myChoiceString);
+                    case 5: ReadAll(myChoiceString,inter);
                     break;
             }
         }
-        public static  void inputAndCreate(string whichObject)
+        public static Customer inputCustomer()
         {
-            IDal s_dal = new Dal.DalList();
-
-            if (whichObject=="Customer")
+            Console.WriteLine("insert identity");
+            int CustomerId = int.Parse(Console.ReadLine());
+            Console.WriteLine("insert full name");
+            string? CustomerName = Console.ReadLine();
+            Console.WriteLine("insert adress");
+            string? Adress = Console.ReadLine();
+            Console.WriteLine("insert phone");
+            string? Phone = Console.ReadLine();
+          return new Customer(CustomerId, CustomerName, Adress, Phone);
+        }
+        public static Sale inputSale()
+        {
+            Console.WriteLine("Enter product code for the promotion:");
+            int ProductId = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter amount of products for the promotion:");
+            int AmountForSale = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter sale price:");
+            double PriceSale = Double.Parse(Console.ReadLine());
+            Console.WriteLine("If the promotion is for club members only, press 1; for all customers press 2:");
+            int isClub = int.Parse(Console.ReadLine());
+            bool JustForClub = isClub == 1 ? true : false;
+            Console.WriteLine("Enter sale start date:");
+            Console.WriteLine("Year:");
+            int year = int.Parse(Console.ReadLine());
+            Console.WriteLine("Month:");
+            int month = int.Parse(Console.ReadLine());
+            Console.WriteLine("Day:");
+            int day = int.Parse(Console.ReadLine());
+            DateTime? SaleStart = new DateTime(year, month, day);
+            Console.WriteLine("Enter sale end date:");
+            Console.WriteLine("Year:");
+            int yearf = int.Parse(Console.ReadLine());
+            Console.WriteLine("Month:");
+            int monthf = int.Parse(Console.ReadLine());
+            Console.WriteLine("Day:");
+            int dayf = int.Parse(Console.ReadLine());
+            DateTime? SaleEnd = new DateTime(yearf, monthf, dayf);
+            return new Sale(1, ProductId, AmountForSale, PriceSale
+                , JustForClub, SaleStart, SaleEnd);
+        }
+        public static Product inputProduct()
+        {
+            Console.WriteLine("Enter id of product");
+            int id = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter product name:");
+            string? ProductName = Console.ReadLine();
+            Console.WriteLine("For watches press 1");
+            Console.WriteLine("For flowers press 2");
+            Console.WriteLine("For beauty products press 3");
+            Console.WriteLine("For tools press 4");
+            Console.WriteLine("For bags press 5");
+            int chooseCategory = int.Parse(Console.ReadLine());
+            Category? category = Category.FLOWER;
+            switch (chooseCategory)
             {
-                Console.WriteLine("הכנס תעודת זהות");
-                int  CustomerId= int.Parse(Console.ReadLine()) ;
-                Console.WriteLine("הכנס שם מלא");
-                string? CustomerName = Console.ReadLine() ;
-                Console.WriteLine("הכנס כתובת");
-                string? Adress = Console.ReadLine() ;
-                Console.WriteLine("הכנס טלפון");
-                string? Phone = Console.ReadLine() ;
-
-                s_dal.Customer.Create(new Customer(CustomerId, CustomerName, Adress, Phone));
-
-
+                case 1:
+                    category = DO.Category.WATCH;
+                    break;
+                case 2:
+                    category = DO.Category.FLOWER;
+                    break;
+                case 3:
+                    category = DO.Category.BEAUTY;
+                    break;
+                case 4:
+                    category = DO.Category.DISH;
+                    break;
+                case 5:
+                    category = DO.Category.BAG;
+                    break;
             }
+            Console.WriteLine("Enter price:");
+            double Price = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter amount:");
 
+            int Amount = int.Parse(Console.ReadLine());
+            return new Product(id, ProductName, category, Price, Amount);
+        }
+
+        public static  void Create<T>(string whichObject , ICrud<T> inter)
+        {
+            if (whichObject == "Customer") {
+                s_dal.Customer.Create(inputCustomer());
+            }
             if(whichObject=="Product")
             {
-                Console.WriteLine("הכנס שם מוצר");
-                string? ProductName= Console.ReadLine() ;
-                Console.WriteLine("לשעונים הקש 1");
-                Console.WriteLine("לפרחים הקש 2");
-                Console.WriteLine("למוצרי טיפוח הקש 3");
-                Console.WriteLine("לכלים הקש 4");
-                Console.WriteLine("לתיקים הקש 5");
-                int chooseCategory = int.Parse(Console.ReadLine()) ;
-                Category? category=Category.FLOWER;
-                switch (chooseCategory)
-                {
-                    case 1:
-                        category = DO.Category.WATCH;
-                        break;
-                    case 2:
-                        category = DO.Category.FLOWER;
-                        break;
-                    case 3:
-                        category = DO.Category.BEAUTY;
-                        break;
-                    case 4:
-                        category = DO.Category.DISH;
-                        break;
-                    case 5:
-                        category = DO.Category.BAG;
-                        break;
-                }
-                Console.WriteLine("הכנס מחיר");
-
-                double Price= Double.Parse(Console.ReadLine()) ;
-                Console.WriteLine("הכנס כמות");
-
-                int Amount = int.Parse(Console.ReadLine()) ;
-                s_dal.Product.Create(new Product(1, ProductName, category, Price, Amount));
+               
+                s_dal.Product.Create(inputProduct());
 
             }
-
             if (whichObject=="Sale")
             {
-                Console.WriteLine("הכנס קוד מוצר למבצע");
-                int ProductId=int.Parse(Console.ReadLine()) ;
-                Console.WriteLine("הכנס כמות מוצרים למבצע");
-                int AmountForSale=int.Parse(Console.ReadLine()) ;
-                Console.WriteLine("הכנס מחיר מבצע");
-                double PriceSale=Double.Parse(Console.ReadLine()) ;
-                Console.WriteLine("אם המבצע ללקוחות מועדון בלבד הקש 1 לכל הלקוחות הקש 2");
-                int isClub = int.Parse(Console.ReadLine());
-                bool JustForClub=isClub==1?true:false;
-                Console.WriteLine("הכנס תאריך התחלת המבצע");
-                Console.WriteLine("שנה:");
-                int year=int.Parse(Console.ReadLine()) ;
-                Console.WriteLine("חודש:");
-                int month = int.Parse(Console.ReadLine());
-                Console.WriteLine("יום:");
-                int day = int.Parse(Console.ReadLine());
-                DateTime? SaleStart=new DateTime(year, month, day);
-                Console.WriteLine("הכנס תאריך סיום המבצע");
-                Console.WriteLine("שנה:");
-                int yearf = int.Parse(Console.ReadLine());
-                Console.WriteLine("חודש:");
-                int monthf = int.Parse(Console.ReadLine());
-                Console.WriteLine("יום:");
-                int dayf = int.Parse(Console.ReadLine());
-                DateTime? SaleEnd = new DateTime(yearf, monthf, dayf);
-                s_dal.Sale.Create(new Sale(1, ProductId, AmountForSale, PriceSale
-                    , JustForClub, SaleStart, SaleEnd));
+               
+                s_dal.Sale.Create(inputSale());
             }
+            displayCrud(whichObject,inter);
         }
-        public static void inputAndUpdate(string whichObject) 
+        public static void Update<T>(string whichObject, ICrud<T> inter) 
         {
-            IDal s_dal = new Dal.DalList();
 
             if (whichObject == "Customer")
-            {
-                Console.WriteLine("הכנס תעודת זהות");
-                int CustomerId = int.Parse(Console.ReadLine());
-                Console.WriteLine("הכנס שם מלא");
-                string? CustomerName = Console.ReadLine();
-                Console.WriteLine("הכנס כתובת");
-                string? Adress = Console.ReadLine();
-                Console.WriteLine("הכנס טלפון");
-                string? Phone = Console.ReadLine();
-
-                s_dal.Customer.Create(new Customer(CustomerId, CustomerName, Adress, Phone));
-
-
+            {        
+                s_dal.Customer.Update(inputCustomer());
             }
-
             if (whichObject == "Product")
             {
-                Console.WriteLine("הכנס שם מוצר");
-                string? ProductName = Console.ReadLine();
-                Console.WriteLine("לשעונים הקש 1");
-                Console.WriteLine("לפרחים הקש 2");
-                Console.WriteLine("למוצרי טיפוח הקש 3");
-                Console.WriteLine("לכלים הקש 4");
-                Console.WriteLine("לתיקים הקש 5");
-                int chooseCategory = int.Parse(Console.ReadLine());
-                Category? category = Category.FLOWER;
-                switch (chooseCategory)
-                {
-                    case 1:
-                        category = DO.Category.WATCH;
-                        break;
-                    case 2:
-                        category = DO.Category.FLOWER;
-                        break;
-                    case 3:
-                        category = DO.Category.BEAUTY;
-                        break;
-                    case 4:
-                        category = DO.Category.DISH;
-                        break;
-                    case 5:
-                        category = DO.Category.BAG;
-                        break;
-                }
-                Console.WriteLine("הכנס מחיר");
-
-                double Price = Double.Parse(Console.ReadLine());
-                Console.WriteLine("הכנס כמות");
-
-                int Amount = int.Parse(Console.ReadLine());
-                s_dal.Product.Create(new Product(1, ProductName, category, Price, Amount));
-
+                s_dal.Product.Update(inputProduct());
             }
-
             if (whichObject == "Sale")
             {
-                Console.WriteLine("הכנס קוד מוצר למבצע");
-                int ProductId = int.Parse(Console.ReadLine());
-                Console.WriteLine("הכנס כמות מוצרים למבצע");
-                int AmountForSale = int.Parse(Console.ReadLine());
-                Console.WriteLine("הכנס מחיר מבצע");
-                double PriceSale = Double.Parse(Console.ReadLine());
-                Console.WriteLine("אם המבצע ללקוחות מועדון בלבד הקש 1 לכל הלקוחות הקש 2");
-                int isClub = int.Parse(Console.ReadLine());
-                bool JustForClub = isClub == 1 ? true : false;
-                Console.WriteLine("הכנס תאריך התחלת המבצע");
-                Console.WriteLine("שנה:");
-                int year = int.Parse(Console.ReadLine());
-                Console.WriteLine("חודש:");
-                int month = int.Parse(Console.ReadLine());
-                Console.WriteLine("יום:");
-                int day = int.Parse(Console.ReadLine());
-                DateTime? SaleStart = new DateTime(year, month, day);
-                Console.WriteLine("הכנס תאריך סיום המבצע");
-                Console.WriteLine("שנה:");
-                int yearf = int.Parse(Console.ReadLine());
-                Console.WriteLine("חודש:");
-                int monthf = int.Parse(Console.ReadLine());
-                Console.WriteLine("יום:");
-                int dayf = int.Parse(Console.ReadLine());
-                DateTime? SaleEnd = new DateTime(yearf, monthf, dayf);
-                s_dal.Sale.Create(new Sale(1, ProductId, AmountForSale, PriceSale
-                    , JustForClub, SaleStart, SaleEnd));
+
+                s_dal.Sale.Update(inputSale());
             }
-        }
-
-        public static void inputAndDelete(string whichObject)
-        {
+            displayCrud(whichObject, inter);
 
         }
-        public static void ReadObject(string whichObject)
+
+        public static void Delete<T>(string whichObject, ICrud<T> inter)
         {
+            Console.WriteLine("enter id");
+            int id = int.Parse(Console.ReadLine());
+            inter.Delete(id);
+            displayCrud(whichObject, inter);
 
         }
-        
-        public static void ReadAllObjects(string whichObject)
+        public static void Read<T>(string whichObject, ICrud<T> inter)
         {
+
+            Console.WriteLine("enter id");
+            int id = int.Parse(Console.ReadLine());
+            Console.WriteLine(inter.Read(id));
+            displayCrud(whichObject, inter);
+
+        }
+
+      
+
+        public static void ReadAll<T>(string whichObject, ICrud<T> inter)
+        {
+
+            var customers = inter.ReadAll();
+
+            foreach (var customer in customers)
+            {
+                Console.WriteLine(customer.ToString());
+            }
+            displayCrud(whichObject, inter);
+
 
         }
 

@@ -20,41 +20,45 @@ internal class SaleImplementation : ISale
     }
     public Sale? Read(int id)
     {
-        Sale? s = Sales.SingleOrDefault(s => s.SaleId == id);
+        var q = from sl in Sales where sl.SaleId == id   select sl;
+        Sale? s = q.FirstOrDefault();
         if (s == null)
         {
             throw new ObjectNotFoundExeption($"this  sale not exists");
         }
         return s;
     }
-    public List<Sale?> ReadAll()
+
+  
+    public List<Sale?> ReadAll(Func<Sale, bool>? filter = null)
     {
-        List<Sale?> newList = new List<Sale?>();
-        foreach (Sale sale in Sales)
-        {
-            newList.Add(sale);
-        }
-        return newList;
+        var q = from s in Sales where filter != null && filter(s) == true || filter == null select s;
+       
+        return q.ToList();
     }
+   
+
     public void Update(Sale item)
     {
-        Sale? existing = Sales.SingleOrDefault(s => s.SaleId == item.SaleId);
-        if (existing is null)
-            throw new ObjectNotFoundExeption($"Sale with Id {item.SaleId} not found.");
-
         Delete(item.SaleId);
         Sales.Add(item);
 
     }
     public void Delete(int id)
     {
-        Sale? s = Sales.SingleOrDefault(s => s.SaleId == id);
-        if (s is null)
+       var q = from s in Sales where s.SaleId == id select s;
+        Sale? sl = q.FirstOrDefault();
+        if (sl is null)
         {
             throw new ObjectNotFoundExeption($"Sale with Id {id} not found.");
         }
-        Sales.Remove(s);
+        Sales.Remove(sl);
     }
 
+    public Sale? Read(Func<Sale, bool>? filter)
+    {
+        var q = from s in Sales where filter != null && filter(s) || filter == null select s;
 
+        return q.ToList().FirstOrDefault();
+    }
 }

@@ -1,56 +1,70 @@
 ﻿using DalApi;
 using DO;
 using static Dal.DataSource;
+using Tools;
+using System.Reflection;
 
 namespace Dal;
 internal class CustomerImplementation : ICustomer
 {
     public int Create(Customer item)
     {
+        LogManager.writeLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+            MethodBase.GetCurrentMethod().Name,"start create func of customer");
+        
         int id = item.CustomerId;
-        foreach (Customer c in Customers)
-
-        {
-
-
-            if (c.CustomerId == id)
+        var q = from c in Customers where c.CustomerId == id select c;
+        if (q.FirstOrDefault() != null)
                 throw new ObjectExistExeption ("this customer already exists exeption");
-        }
         Customers.Add(item);
+
+        LogManager.writeLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+            MethodBase.GetCurrentMethod().Name, "finish create func of customer");
+
         return id;
+
+
+
+
+
+
     }
     public Customer? Read(int id)
     {
-        Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
-        if (c == null)
-            throw new ObjectNotFoundExeption("notContainThisIdException");
-        return c;
-    }
-    public List<Customer?> ReadAll()
-    {
-        List<Customer?> list = new List<Customer>();
+        var q = from c in Customers where c.CustomerId == id select c;
+        Customer? cu = q.FirstOrDefault();
 
-        foreach (Customer c in Customers)
-        {
-            list.Add(c);
-        }
+        if (cu == null)
+            throw new ObjectNotFoundExeption("notContainThisIdException");
+        return cu;
+    }
+    public Customer? Read(Func<Customer, bool>? filter)
+    {
+        var q = from c in Customers where filter!=null && filter(c)||filter==null select c;
+
+        return q.ToList().FirstOrDefault();
+    }
+
+    public List<Customer?> ReadAll(Func < Customer,bool>? filter=null)
+    {
+        var q = from c in Customers where filter!=null && filter(c)==true || filter==null select c  ;
+        var list = q.ToList();
         return list;
     }
     public void Update(Customer item)
     {
-        Customer? c = Customers.SingleOrDefault(i => item.CustomerId == i.CustomerId);
-        if (c == null)
-            throw new ObjectNotFoundExeption("notContainThisId");
-        Customers.Remove(c);
+        Delete(item.CustomerId);
         Customers.Add(item);
 
     }
     public void Delete(int id)
     {
-        Customer? c = Customers.SingleOrDefault(i => id == i.CustomerId);
-        if (c == null)
+        var q = from c in Customers where c.CustomerId ==id select c;
+        Customer cus = q.FirstOrDefault();
+         
+        if (cus == null)
             throw new ObjectNotFoundExeption("notContainThisIdException");
-        Customers.Remove(c);
+        Customers.Remove(cus);
     }
 
 }
