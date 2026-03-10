@@ -7,9 +7,9 @@ using DalApi;
 public static class  Initialization
 {
    private static IDal s_dal;
-    public static void initialize(IDal dal)
+    public static void initialize()
     {
-        s_dal = dal;
+        s_dal = DalApi.Factory.Get;
         creatCustomer();
         creatProduct();
         creatSale();

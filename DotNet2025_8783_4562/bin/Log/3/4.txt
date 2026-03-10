@@ -1,0 +1,60 @@
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: start create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: finish create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: start create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: finish create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: start create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: finish create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: start create func of customer
+[15:53:34] Project: Dal.CustomerImplementation | Function: Create | Message: finish create func of customer
+[15:53:59] Project: Dal.CustomerImplementation | Function: Create | Message: start create func of customer
+[15:53:59] Project: Dal.CustomerImplementation | Function: Create | Message: finish create func of customer
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:03:57] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:04:07] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:04:07] Project: DalTest.Program | Function: Main | Message: ObjectExistExeption
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[16:50:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func

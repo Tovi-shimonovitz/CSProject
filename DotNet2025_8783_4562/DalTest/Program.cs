@@ -1,32 +1,37 @@
 ﻿using Dal;
 using DalApi;
 using DO;
-using DO;
 using System.Diagnostics;
 using System.Numerics;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Tools;
 
 namespace DalTest
 {
     internal class Program
     {
-        static IDal s_dal = new Dal.DalList();
+        static IDal s_dal = s_dal = DalApi.Factory.Get;
         static void Main(string[] args)
         {
            
             try
             {
-                Initialization.initialize(s_dal);
+                Initialization.initialize();
                 displayMainMenue();
 
             }
             catch (ObjectNotFoundExeption e)
             {
+                LogManager.writeLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+    MethodBase.GetCurrentMethod().Name, "ObjectNotFoundExeption");
                 Console.WriteLine(e.Message);
             }
             catch (ObjectExistExeption e)
             {
+                LogManager.writeLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+MethodBase.GetCurrentMethod().Name, "ObjectExistExeption");
                 Console.WriteLine(e.Message);
             }
 
