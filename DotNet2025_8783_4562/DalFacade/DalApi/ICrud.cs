@@ -4,9 +4,8 @@ using DO;
 
 namespace DalApi
 {
- public   interface ICrud<T>
+ public interface ICrud<T>
     {
-
         public int Create(T item);
         public T? Read(int id);
         public T? Read(Func<T, bool>? filter);

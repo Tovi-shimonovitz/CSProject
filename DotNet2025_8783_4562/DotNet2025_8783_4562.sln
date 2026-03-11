@@ -3,13 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalTest", "DalTest\DalTest.csproj", "{FA74A019-CB63-48E3-83A0-374ACEC366D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DalTest", "DalTest\DalTest.csproj", "{FA74A019-CB63-48E3-83A0-374ACEC366D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalFacade", "DalFacade\DalFacade.csproj", "{52349676-F937-4E47-A576-3C196B01C814}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DalFacade", "DalFacade\DalFacade.csproj", "{52349676-F937-4E47-A576-3C196B01C814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalList", "DalList\DalList.csproj", "{D1E39BEE-2088-4284-949C-065DEB9313A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DalList", "DalList\DalList.csproj", "{D1E39BEE-2088-4284-949C-065DEB9313A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{44BFF569-707A-4DEE-A68C-BE1A89576073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj", "{7E95C23D-2DB4-459E-9705-7DAEE51BEA65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xml", "xml", "{471221AE-723D-4B0A-AE6E-B13495688647}"
+	ProjectSection(SolutionItems) = preProject
+		xml\customers.xml = xml\customers.xml
+		xml\dal-config.xml = xml\dal-config.xml
+		xml\data-config.xml = xml\data-config.xml
+		xml\products.xml = xml\products.xml
+		xml\sales.xml = xml\sales.xml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{C69CE397-2910-4531-B9BA-2576FCA9E35C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlTest", "BlTest\BlTest.csproj", "{01A5DEA3-A015-41E4-881D-AC670361F85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalXml", "DalXml\DalXml.csproj", "{46C9D5C3-929A-4BF8-B0B1-440C0085B852}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +44,27 @@ Global
 		{D1E39BEE-2088-4284-949C-065DEB9313A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E39BEE-2088-4284-949C-065DEB9313A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E39BEE-2088-4284-949C-065DEB9313A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44BFF569-707A-4DEE-A68C-BE1A89576073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44BFF569-707A-4DEE-A68C-BE1A89576073}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44BFF569-707A-4DEE-A68C-BE1A89576073}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44BFF569-707A-4DEE-A68C-BE1A89576073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E95C23D-2DB4-459E-9705-7DAEE51BEA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E95C23D-2DB4-459E-9705-7DAEE51BEA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E95C23D-2DB4-459E-9705-7DAEE51BEA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E95C23D-2DB4-459E-9705-7DAEE51BEA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69CE397-2910-4531-B9BA-2576FCA9E35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69CE397-2910-4531-B9BA-2576FCA9E35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69CE397-2910-4531-B9BA-2576FCA9E35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69CE397-2910-4531-B9BA-2576FCA9E35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A5DEA3-A015-41E4-881D-AC670361F85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A5DEA3-A015-41E4-881D-AC670361F85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A5DEA3-A015-41E4-881D-AC670361F85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A5DEA3-A015-41E4-881D-AC670361F85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C9D5C3-929A-4BF8-B0B1-440C0085B852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C9D5C3-929A-4BF8-B0B1-440C0085B852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C9D5C3-929A-4BF8-B0B1-440C0085B852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C9D5C3-929A-4BF8-B0B1-440C0085B852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {965787D9-34C0-4755-A508-13405FD17BDC}
 	EndGlobalSection
 EndGlobal

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xp+qBkwYKH4=",
   "success": true,
   "projectFilePath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
+=======
+  "dgSpecHash": "wjzCZOFjJxA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
+>>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
   "expectedPackageFiles": [],
   "logs": []
 }

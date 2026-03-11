@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DalXml/1.0.0": {
+        "dependencies": {
+          "DalFacade": "1.0.0",
+          "ServiceStack.Text": "10.0.6"
+        },
+        "runtime": {
+          "DalXml.dll": {}
+        }
+      },
+      "ServiceStack.Text/10.0.6": {
+        "runtime": {
+          "lib/net8.0/ServiceStack.Text.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "10.0.6.0"
+          }
+        }
+      },
+      "DalFacade/1.0.0": {
+        "runtime": {
+          "DalFacade.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DalXml/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceStack.Text/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TzHW0+BC681M/ShESA9uPmMjkgGIXHYEprpvRXsOv647+7MAcpKC3vdmmtuGWTkqb4SuqnXIckg/4+kEWEUYQQ==",
+      "path": "servicestack.text/10.0.6",
+      "hashPath": "servicestack.text.10.0.6.nupkg.sha512"
+    },
+    "DalFacade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
