@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dHpf8ephn3U=",
+  "dgSpecHash": "Y+5yAO+NhG0=",
   "success": true,
-  "projectFilePath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\DalXml\\DalXml.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\DalXml\\DalXml.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\huser\\.nuget\\packages\\servicestack.text\\10.0.6\\servicestack.text.10.0.6.nupkg.sha512"
+    "C:\\Users\\USER\\.nuget\\packages\\servicestack.text\\10.0.6\\servicestack.text.10.0.6.nupkg.sha512"
   ],
   "logs": []
 }

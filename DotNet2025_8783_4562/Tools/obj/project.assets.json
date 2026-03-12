@@ -8,39 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\huser\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\user1\\.nuget\\packages\\": {},
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
       "projectName": "Tools",
-      "projectPath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
-      "packagesPath": "C:\\Users\\huser\\.nuget\\packages\\",
-      "outputPath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
-      "projectName": "Tools",
-      "projectPath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
-      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\Documents\\יהודית\\תכנות שנה ב\\c# מתקדם\\פרויקטC#\\CSProject\\DotNet2025_8783_4562\\Tools\\obj\\",
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
+      "projectPath": "C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\Tools\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\huser\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -48,12 +32,7 @@
         "net8.0"
       ],
       "sources": {
-<<<<<<< HEAD
-        "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-=======
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -71,12 +50,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-<<<<<<< HEAD
       },
-      "SdkAnalysisLevel": "9.0.300"
-=======
-      }
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -97,12 +72,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
->>>>>>> 262c371c2246fa228663baa2d8c829bafbb00717
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\Tools\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

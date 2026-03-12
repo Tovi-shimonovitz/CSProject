@@ -1,20 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tcVIq07BCKk=",
-  "success": false,
-  "projectFilePath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\BlTest\\BlTest.csproj",
+  "dgSpecHash": "dvXPrZuVFkA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\טובי\\תכנות\\יד\\C#\\CSProject\\CSProject\\DotNet2025_8783_4562\\BlTest\\BlTest.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "projectPath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\BlTest\\BlTest.csproj",
-      "filePath": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\BlTest\\BlTest.csproj",
-      "libraryId": "Z:\\יד תשפו\\סטרו יהודית\\c#\\CSProject\\DotNet2025_8783_4562\\Tools\\Tools.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
