@@ -8,10 +8,11 @@ namespace BL.BO
 {
     public class SaleInProduct
     {
-        public int SaleId { get; set; }
-        public int AmountForSale { get; set; }
+        public int SaleId { get; init; }
+        public int Quantity { get; set; }
         public double Price { get; set; }
-        public bool AllCustomer {  get; set; }
+        public  bool IsPreferred { get; init; }
+        public override string ToString() => this.ToStringProperty();
 
     }
 }

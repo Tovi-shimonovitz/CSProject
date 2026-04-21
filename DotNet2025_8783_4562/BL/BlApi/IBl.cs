@@ -9,9 +9,10 @@ namespace BL.BlApi
 {
     public interface IBl
     {
-        public ICustomer Customer { get; set; }
-        public IProduct Product{ get; set; }
-        public ISale Sale { get; set; }
+        public ICustomer Customer { get; }
+        public IProduct Product{ get; }
+        public ISale Sale { get; }
+        public IOrder Order { get; }
 
     }
 }
