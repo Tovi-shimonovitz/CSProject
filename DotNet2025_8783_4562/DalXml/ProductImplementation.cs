@@ -11,7 +11,7 @@ namespace Dal
 {
     internal class ProductImplementation : IProduct
     {
-        string PATH = "products.xml";
+        public static readonly string PATH = @"../xml/products.xml";
 
         public void save(List<Product> products)
         {
@@ -37,6 +37,8 @@ namespace Dal
         public int Create(Product item)
         {
             List<Product> products = GetAllProducts();
+            if (products.Any(p => p.ProductId == item.ProductId))
+                throw new ObjectExistExeption("this product already exists exeption");
             products.Add(item);
             save(products);
             return item.ProductId;

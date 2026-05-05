@@ -13,35 +13,38 @@ namespace Dal
 {
     internal class SaleImplementation : ISale
     {
-        string PATH = "sales.xml";
-        static List<Sale> Load()
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
-            using (FileStream fs = new FileStream("sales.xml", FileMode.Open))
-            {
-                return (List<Sale>)serializer.Deserialize(fs);
-            }
-        }
+       public static readonly string  PATH = @"../xml/sales.xml";
+        //static List<Sale> Load()
+        //{
+        //    XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
+        //    using (StreamWriter sw = new StreamWriter(PATH))
+        //    {
+        //        return (List<Sale>)serializer.Deserialize(sw,list);
+        //    }
+        //}
 
-        static void Save(List<Sale> list)
+        public void Save(List<Sale> list)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
-            using (FileStream fs = new FileStream("sales.xml", FileMode.Create))
+            using (StreamWriter sw = new StreamWriter(PATH))
             {
-                serializer.Serialize(fs, list);
+                serializer.Serialize(sw, list);
             }
         }
         public int Create(Sale item)
         {
-            List<Sale> list = Load();
+            List<Sale> list = ReadAll();
+            if (list.FirstOrDefault(s => s.SaleId == item.SaleId) != null)
+                throw new ObjectExistExeption($"this  sale already exists exeption");
             list.Add(item);
+            Save(list);
             return item.SaleId;
 
         }
 
         public void Delete(int id)
         {
-            List<Sale> list = Load();
+            List<Sale> list = ReadAll();
             Sale item = list.FirstOrDefault(s=> s.SaleId == id);
             if (item != null) {
                  throw new ObjectNotFoundExeption($"this  sale not exists");
@@ -52,7 +55,7 @@ namespace Dal
 
         public Sale? Read(int id)
         {
-            List<Sale> list = Load();
+            List<Sale> list = ReadAll();
             var item = list.FirstOrDefault(s=> s.SaleId == id);
             if (item == null)
                 throw new ObjectNotFoundExeption($"this  sale not exists");
@@ -62,7 +65,7 @@ namespace Dal
 
         public Sale? Read(Func<Sale, bool>? filter)
         {
-            List<Sale> list = Load();
+            List<Sale> list = ReadAll();
             Sale item = list.FirstOrDefault(filter);
             if(item == null)
                 throw new ObjectNotFoundExeption($"this  sale not exists");
@@ -71,14 +74,19 @@ namespace Dal
 
         public List<Sale?> ReadAll(Func<Sale, bool>? filter = null)
         {
-            List<Sale> list = Load();
-            List<Sale?> result = list.Where(filter).ToList();
-            return result;
+            if (!File.Exists(PATH)) return new List<Sale>();
+
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
+            using (StreamReader sr = new StreamReader(PATH))
+            {
+                var products = (List<Sale>)serializer.Deserialize(sr);
+                return products ?? new List<Sale>();
+            }
         }
 
         public void Update(Sale item)
         {
-            List<Sale> list = Load();
+            List<Sale> list = ReadAll();
             Sale sale = list.FirstOrDefault(s=> s.SaleId == item.SaleId);
             if(sale == null)
             {

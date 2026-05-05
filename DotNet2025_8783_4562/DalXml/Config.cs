@@ -10,14 +10,9 @@ namespace Dal;
 internal static class Config
 {
     private static string nameConfigFile = "data-config";
-
-
-
-
     private static int staticSaleId;
     public static int GetSaleId
     {
-
 
         get
         {

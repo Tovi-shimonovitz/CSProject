@@ -12,3 +12,17 @@ C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרו�
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\refint\DalXml.dll
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.pdb
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\ref\DalXml.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.deps.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.AssemblyInfo.cs
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.sourcelink.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.Up2Date
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\refint\DalXml.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\ref\DalXml.dll

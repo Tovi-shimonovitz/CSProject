@@ -12,11 +12,12 @@ namespace Dal
 {
     internal class CustomerImplementation : ICustomer
     {
-        private XElement root = XElement.Load("customers");
-        private string CUSTOMER = "customer";
+        public static readonly string pathCustomer = @"../xml/customers.xml";
+        private XElement root = XElement.Load(pathCustomer);
+        private string CUSTOMER = "Customer";
         private string ID = "CustomerId";
         private string NAME = "CustomerName";
-        private string ADDRESS = "Adress";
+        private string ADDRESS = "Address";
         private string PHONE = "Phone";
         public int Create(Customer item)
         {
@@ -33,7 +34,7 @@ namespace Dal
                                new XElement("Phone", item.Phone)));
 
 
-            root.Save("customers");
+            root.Save(pathCustomer);
 
             return item.CustomerId;
         }
@@ -47,7 +48,7 @@ namespace Dal
 
             }
             root.Descendants("Customer").FirstOrDefault(c => (int)c.Element("CustomerId") == id).Remove();
-            root.Save("customers");
+            root.Save(pathCustomer);
 
         }
 
@@ -57,7 +58,7 @@ namespace Dal
             if (root.Descendants(ID).FirstOrDefault(i => int.Parse(i.Value) == id) == null)
                 throw new ObjectNotFoundExeption("notContainThisIdException");
             var customerElement = root.Descendants(CUSTOMER)
-                    .FirstOrDefault(c => (int?)c.Element("ID") == id);
+                    .FirstOrDefault(c => (int?)c.Element(ID) == id);
             return new Customer
             {
                 CustomerName = (string)customerElement.Element(NAME),
@@ -100,7 +101,7 @@ namespace Dal
                                new XElement("CustomerName", item.CustomerName),
                                new XElement("Address", item.Adress),
                                new XElement("Phone", item.Phone)));
-            root.Save("customers");
+            root.Save(pathCustomer);
 
         }
     }
