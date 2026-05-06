@@ -31,6 +31,11 @@ internal class Program
         }
         Console.WriteLine("Are you one of our preferred customers? yes press 1 no press 2");
         choice = int.Parse(Console.ReadLine());
+        while (choice != 1 && choice != 2)
+        {
+            Console.WriteLine("invalid input please press again!");
+            choice = int.Parse(Console.ReadLine());
+        }
         if (choice == 1)
         {
             isPreferred = true;
