@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCustomer>
+  <Customer>
+    <CustomerId>1</CustomerId>
+    <CustomerName>tovi</CustomerName>
+    <Address>Mesilat Yosef</Address>
+    <Phone>0534168961</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>2</CustomerId>
+    <CustomerName>yehudit</CustomerName>
+    <Address>gefen</Address>
+    <Phone>0534178779</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>3</CustomerId>
+    <CustomerName>rnh</CustomerName>
+    <Address>rerynd</Address>
+    <Phone>465132</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>4</CustomerId>
+    <CustomerName>nebtrg</CustomerName>
+    <Address>etnbr</Address>
+    <Phone>98654</Phone>
+  </Customer>
 </ArrayOfCustomer>
-

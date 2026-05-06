@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfProduct>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <ProductId>1</ProductId>
+    <ProductName>pinkWatch</ProductName>
+    <Category>WATCH</Category>
+    <Price>100</Price>
+    <Amount>18</Amount>
+  </Product>
+  <Product>
+    <ProductId>3</ProductId>
+    <ProductName>narkis</ProductName>
+    <Category>FLOWER</Category>
+    <Price>30</Price>
+    <Amount>3</Amount>
+  </Product>
+  <Product>
+    <ProductId>4</ProductId>
+    <ProductName>handCream</ProductName>
+    <Category>BEAUTY</Category>
+    <Price>25</Price>
+    <Amount>7</Amount>
+  </Product>
+  <Product>
+    <ProductId>2</ProductId>
+    <ProductName>womenBag</ProductName>
+    <Category>BAG</Category>
+    <Price>200</Price>
+    <Amount>15</Amount>
+  </Product>
 </ArrayOfProduct>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomer>
+  <Customer>
+    <CustomerId>6</CustomerId>
+    <CustomerName>h</CustomerName>
+    <Address>j</Address>
+    <Phone>89</Phone>
+  </Customer>
+</ArrayOfCustomer>

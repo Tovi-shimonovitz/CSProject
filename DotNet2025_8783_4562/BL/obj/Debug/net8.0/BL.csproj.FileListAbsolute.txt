@@ -12,3 +12,17 @@ C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרו�
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\refint\BL.dll
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.pdb
 C:\Users\user1\Documents\יהודית\תכנות שנה ב\c# מתקדם\פרויקטC#\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\ref\BL.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.AssemblyInfo.cs
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.sourcelink.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\refint\BL.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\BL.deps.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\BL.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\BL.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\BL.csproj.Up2Date
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BL\obj\Debug\net8.0\ref\BL.dll

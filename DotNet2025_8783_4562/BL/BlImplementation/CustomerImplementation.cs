@@ -8,7 +8,7 @@ namespace BL.BlImplementation;
 internal class CustomerImplementation : ICustomer
 {
     private DalApi.IDal _dal = DalApi.Factory.Get;
-
+    
     public int Create(BO.Customer item)
     {
         try
@@ -68,13 +68,11 @@ internal class CustomerImplementation : ICustomer
 
     public BO.Customer? Read(Func<BO.Customer, bool>? filter)
     {
-        // שימוש במתודת הרחבה LINQ
         return ReadAll().FirstOrDefault(filter!);
     }
 
     public List<BO.Customer?> ReadAll(Func<BO.Customer, bool>? filter = null)
     {
-        // שימוש בתחביר שאילתה LINQ (דרישה: לפחות 2 מכל סוג)
         var customers = from dalCust in _dal.Customer.ReadAll()
                         let boCust = BO.Tools.ToBO(dalCust!)
                         select boCust;

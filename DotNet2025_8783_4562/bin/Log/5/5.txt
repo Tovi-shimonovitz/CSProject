@@ -1,0 +1,26 @@
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.CustomerImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: start func
+[09:28:55] Project: Dal.ProductImplementation | Function: Create | Message: finish func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: start func
+[09:28:56] Project: Dal.SaleImplementation | Function: Create | Message: finish func
+[09:29:27] Project: Dal.CustomerImplementation | Function: Create | Message: start func
+[09:29:27] Project: DalTest.Program | Function: Main | Message: ObjectExistExeption

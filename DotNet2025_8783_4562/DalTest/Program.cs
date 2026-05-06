@@ -15,7 +15,8 @@ namespace DalTest
         static IDal s_dal = s_dal = DalApi.Factory.Get;
         static void Main(string[] args)
         {
-           
+            Console.WriteLine(Environment.CurrentDirectory);
+
             try
             {
                 Console.WriteLine("if you want to initialize press 1 else 0");
