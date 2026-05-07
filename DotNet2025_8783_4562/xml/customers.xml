@@ -24,4 +24,16 @@
     <Address>etnbr</Address>
     <Phone>98654</Phone>
   </Customer>
+  <Customer>
+    <CustomerId>0</CustomerId>
+    <CustomerName></CustomerName>
+    <Address></Address>
+    <Phone></Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>14</CustomerId>
+    <CustomerName>חיים</CustomerName>
+    <Address>חושן</Address>
+    <Phone>0337645599</Phone>
+  </Customer>
 </ArrayOfCustomer>

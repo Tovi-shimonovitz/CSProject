@@ -1,0 +1,88 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Logs
+*.log
+
+## OS generated
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Publish output
+publish/
+*.Publish.xml
+*.pubxml
+*.azurePubxml
+
+## User-specific files
+*.rsuser
+*.userprefs
+
+## ASP.NET
+appsettings.Development.json
+appsettings.Local.json
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+## Entity Framework
+Migrations/*.cs
