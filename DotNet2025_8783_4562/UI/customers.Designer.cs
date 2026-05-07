@@ -49,10 +49,16 @@
             panel3 = new Panel();
             panelTitle = new Panel();
             panelDelete = new Panel();
+            massageDelete = new Label();
             endDelete = new Button();
             onlyId = new NumericUpDown();
             label2 = new Label();
-            massageDelete = new Label();
+            panel4 = new Panel();
+            dataGridView2 = new DataGridView();
+            readId = new NumericUpDown();
+            button1 = new Button();
+            label3 = new Label();
+            panelCenter = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)id).BeginInit();
@@ -61,6 +67,10 @@
             panelTitle.SuspendLayout();
             panelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)onlyId).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)readId).BeginInit();
+            panelCenter.SuspendLayout();
             SuspendLayout();
             // 
             // title
@@ -126,16 +136,16 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(28, 21);
+            dataGridView1.Location = new Point(41, 36);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(172, 108);
+            dataGridView1.Size = new Size(176, 125);
             dataGridView1.TabIndex = 7;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // filter
             // 
-            filter.Location = new Point(75, 146);
+            filter.Location = new Point(79, 180);
             filter.Name = "filter";
             filter.Size = new Size(94, 29);
             filter.TabIndex = 8;
@@ -145,7 +155,7 @@
             // 
             // name
             // 
-            name.Location = new Point(90, 70);
+            name.Location = new Point(98, 75);
             name.Name = "name";
             name.Size = new Size(125, 27);
             name.TabIndex = 10;
@@ -187,7 +197,7 @@
             panel1.Controls.Add(phone);
             panel1.Controls.Add(name);
             panel1.Controls.Add(adress);
-            panel1.Location = new Point(525, 83);
+            panel1.Location = new Point(553, 15);
             panel1.Name = "panel1";
             panel1.Size = new Size(224, 284);
             panel1.TabIndex = 14;
@@ -198,9 +208,9 @@
             massageCreate.AutoSize = true;
             massageCreate.Location = new Point(46, 246);
             massageCreate.Name = "massageCreate";
-            massageCreate.Size = new Size(142, 20);
+            massageCreate.Size = new Size(147, 20);
             massageCreate.TabIndex = 19;
-            massageCreate.Text = "הלקוח נוצר בהצלחה";
+            massageCreate.Text = "הלקוח עודכן בהצלחה";
             massageCreate.Click += massageCreate_Click;
             // 
             // endCreate
@@ -232,9 +242,9 @@
             // 
             panelReadAll.Controls.Add(filter);
             panelReadAll.Controls.Add(dataGridView1);
-            panelReadAll.Location = new Point(257, 82);
+            panelReadAll.Location = new Point(342, 212);
             panelReadAll.Name = "panelReadAll";
-            panelReadAll.Size = new Size(250, 197);
+            panelReadAll.Size = new Size(251, 222);
             panelReadAll.TabIndex = 15;
             panelReadAll.Paint += panelReadAll_Paint;
             // 
@@ -254,7 +264,7 @@
             // panelTitle
             // 
             panelTitle.Controls.Add(title);
-            panelTitle.Location = new Point(400, 12);
+            panelTitle.Location = new Point(525, 12);
             panelTitle.Name = "panelTitle";
             panelTitle.Size = new Size(250, 50);
             panelTitle.TabIndex = 17;
@@ -266,15 +276,25 @@
             panelDelete.Controls.Add(endDelete);
             panelDelete.Controls.Add(onlyId);
             panelDelete.Controls.Add(label2);
-            panelDelete.Location = new Point(1, 86);
+            panelDelete.Location = new Point(6, 3);
             panelDelete.Name = "panelDelete";
-            panelDelete.Size = new Size(250, 220);
+            panelDelete.Size = new Size(277, 208);
             panelDelete.TabIndex = 18;
             panelDelete.Paint += panelDelete_Paint;
             // 
+            // massageDelete
+            // 
+            massageDelete.AutoSize = true;
+            massageDelete.Location = new Point(68, 137);
+            massageDelete.Name = "massageDelete";
+            massageDelete.Size = new Size(168, 20);
+            massageDelete.TabIndex = 20;
+            massageDelete.Text = "המחיקה בוצעה בהצלחה";
+            massageDelete.Click += massageDelete_Click;
+            // 
             // endDelete
             // 
-            endDelete.Location = new Point(80, 81);
+            endDelete.Location = new Point(108, 85);
             endDelete.Name = "endDelete";
             endDelete.Size = new Size(94, 29);
             endDelete.TabIndex = 19;
@@ -284,7 +304,7 @@
             // 
             // onlyId
             // 
-            onlyId.Location = new Point(53, 34);
+            onlyId.Location = new Point(68, 51);
             onlyId.Name = "onlyId";
             onlyId.Size = new Size(150, 27);
             onlyId.TabIndex = 18;
@@ -293,32 +313,82 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(92, 6);
+            label2.Location = new Point(120, 14);
             label2.Name = "label2";
             label2.Size = new Size(82, 20);
             label2.TabIndex = 13;
             label2.Text = "הכנס מזהה";
             // 
-            // massageDelete
+            // panel4
             // 
-            massageDelete.AutoSize = true;
-            massageDelete.Location = new Point(35, 168);
-            massageDelete.Name = "massageDelete";
-            massageDelete.Size = new Size(168, 20);
-            massageDelete.TabIndex = 20;
-            massageDelete.Text = "המחיקה בוצעה בהצלחה";
-            massageDelete.Click += massageDelete_Click;
+            panel4.Controls.Add(dataGridView2);
+            panel4.Controls.Add(readId);
+            panel4.Controls.Add(button1);
+            panel4.Controls.Add(label3);
+            panel4.Location = new Point(3, 187);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(299, 259);
+            panel4.TabIndex = 19;
+            panel4.Paint += panel4_Paint;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(56, 130);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(172, 108);
+            dataGridView2.TabIndex = 21;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
+            // 
+            // readId
+            // 
+            readId.Location = new Point(78, 56);
+            readId.Name = "readId";
+            readId.Size = new Size(150, 27);
+            readId.TabIndex = 21;
+            readId.ValueChanged += readId_ValueChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(56, 89);
+            button1.Name = "button1";
+            button1.Size = new Size(170, 29);
+            button1.TabIndex = 20;
+            button1.Text = "הטען נתונים";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(114, 24);
+            label3.Name = "label3";
+            label3.Size = new Size(82, 20);
+            label3.TabIndex = 14;
+            label3.Text = "הכנס מזהה";
+            label3.Click += label3_Click;
+            // 
+            // panelCenter
+            // 
+            panelCenter.Controls.Add(panel1);
+            panelCenter.Controls.Add(panel4);
+            panelCenter.Controls.Add(panelReadAll);
+            panelCenter.Controls.Add(panelDelete);
+            panelCenter.Location = new Point(12, 68);
+            panelCenter.Name = "panelCenter";
+            panelCenter.Size = new Size(789, 446);
+            panelCenter.TabIndex = 20;
+            panelCenter.Paint += panelCenter_Paint;
             // 
             // customers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1072, 514);
-            Controls.Add(panelDelete);
+            Controls.Add(panelCenter);
             Controls.Add(panelTitle);
             Controls.Add(panel3);
-            Controls.Add(panelReadAll);
-            Controls.Add(panel1);
             Name = "customers";
             Text = "customers";
             Load += customers_Load;
@@ -333,6 +403,11 @@
             panelDelete.ResumeLayout(false);
             panelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)onlyId).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)readId).EndInit();
+            panelCenter.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -363,5 +438,11 @@
         private Label label2;
         private Button endDelete;
         private Label massageDelete;
+        private Panel panel4;
+        private Label label3;
+        private DataGridView dataGridView2;
+        private Button button1;
+        private NumericUpDown readId;
+        private Panel panelCenter;
     }
 }
