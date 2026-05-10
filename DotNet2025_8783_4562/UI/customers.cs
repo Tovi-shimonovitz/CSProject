@@ -49,12 +49,22 @@ namespace UI
 
         private void readAllCustomers_Click(object sender, EventArgs e)
         {
+
             SetFilterVisibility();
+            readAllMassage.Visible = false;
+
             panelReadAll.Visible = true;
             panelReadAll.Dock = DockStyle.Fill;
             List<BL.BO.Customer?> customersList = _customerLogic.ReadAll();
+            if (customersList != null) { 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = customersList;
+        }
+            else
+            {
+                readAllMassage.Visible = true;
+            }
+
 
         }
 
@@ -76,6 +86,7 @@ namespace UI
             panel4.Visible = true;
             panel4.Dock = DockStyle.Fill;
             dataGridView2.Visible = false;
+            readMassage.Visible = false;
 
 
         }
@@ -159,23 +170,40 @@ namespace UI
         {
             if (typeButton == "create")
             {
-                BL.BO.Customer? customer = new BL.BO.Customer();
-                customer.CustomerId = (int)id.Value;
-                customer.CustomerName = name.Text;
-                customer.Address = adress.Text;
-                customer.Phone = phone.Text;
-                _customerLogic.Create(customer);
-                massageCreate.Visible = true;
+                try
+                {
+                    BL.BO.Customer? customer = new BL.BO.Customer();
+                    customer.CustomerId = (int)id.Value;
+                    customer.CustomerName = name.Text;
+                    customer.Address = adress.Text;
+                    customer.Phone = phone.Text;
+                    _customerLogic.Create(customer);
+                    massageCreate.Visible = true;
+                }
+                catch
+                {
+                    massageCreate.Text = "הפעולה נכשלה, מזהה קיים";
+                }
             }
             else
             {
-                BL.BO.Customer? customer = new BL.BO.Customer();
-                customer.CustomerId = (int)id.Value;
-                customer.CustomerName = name.Text;
-                customer.Address = adress.Text;
-                customer.Phone = phone.Text;
-                _customerLogic.Update(customer);
-                massageCreate.Visible = true;
+                try
+                {
+                    BL.BO.Customer? customer = new BL.BO.Customer();
+                    customer.CustomerId = (int)id.Value;
+                    customer.CustomerName = name.Text;
+                    customer.Address = adress.Text;
+                    customer.Phone = phone.Text;
+                    _customerLogic.Update(customer);
+                    massageCreate.Visible = true;
+                }
+                catch
+                {
+                    massageCreate.Visible = true;
+                    massageCreate.Text = "הפעולה נכשלה, לקוח לא קיים";
+
+                }
+
             }
         }
 
@@ -201,8 +229,18 @@ namespace UI
 
         private void endDelete_Click(object sender, EventArgs e)
         {
-            _customerLogic.Delete((int)onlyId.Value);
-            massageDelete.Visible = true;
+            try
+            {
+                _customerLogic.Delete((int)onlyId.Value);
+                massageDelete.Visible = true;
+            }
+            catch
+            {
+                massageDelete.Text = "לקוח לא קיים";
+                massageDelete.Visible = true;
+
+            }
+
         }
 
         private void massageDelete_Click(object sender, EventArgs e)
@@ -227,11 +265,15 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var customer = _customerLogic.Read(int.Parse(readId.Text));
-            dataGridView2.Visible = true;
-            dataGridView2.DataSource = null;
-            dataGridView2.DataSource = new List<BL.BO.Customer?> { customer };
+            try
+            {
+                var customer = _customerLogic.Read(int.Parse(readId.Text));
 
+                dataGridView2.Visible = true;
+                dataGridView2.DataSource = null;
+                dataGridView2.DataSource = new List<BL.BO.Customer?> { customer };
+            }
+            catch { readMassage.Visible = true; }
 
         }
 
@@ -251,6 +293,16 @@ namespace UI
         }
 
         private void panelCenter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void readMassage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void readAllMassage_Click(object sender, EventArgs e)
         {
 
         }

@@ -42,7 +42,7 @@ namespace Dal
         public void Delete(int id)
         {
            
-            if (root.Descendants("Customer").Any(c => (int)c.Element("CustomerId") == id))
+            if (!root.Descendants("Customer").Any(c => (int)c.Element("CustomerId") == id))
             {
                 throw new ObjectNotFoundExeption("notContainThisIdException");
 

@@ -13,6 +13,7 @@ internal class CustomerImplementation : ICustomer
             MethodBase.GetCurrentMethod().Name,"start func");
         
         int id = item.CustomerId;
+
         var q = from c in Customers where c.CustomerId == id select c;
         if (q.FirstOrDefault() != null)
                 throw new ObjectExistExeption ("this customer already exists exeption");

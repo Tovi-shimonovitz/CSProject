@@ -54,11 +54,13 @@
             onlyId = new NumericUpDown();
             label2 = new Label();
             panel4 = new Panel();
+            readMassage = new Label();
             dataGridView2 = new DataGridView();
             readId = new NumericUpDown();
             button1 = new Button();
             label3 = new Label();
             panelCenter = new Panel();
+            readAllMassage = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)id).BeginInit();
@@ -136,16 +138,16 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(41, 36);
+            dataGridView1.Location = new Point(3, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(176, 125);
+            dataGridView1.Size = new Size(245, 142);
             dataGridView1.TabIndex = 7;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // filter
             // 
-            filter.Location = new Point(79, 180);
+            filter.Location = new Point(77, 160);
             filter.Name = "filter";
             filter.Size = new Size(94, 29);
             filter.TabIndex = 8;
@@ -240,6 +242,7 @@
             // 
             // panelReadAll
             // 
+            panelReadAll.Controls.Add(readAllMassage);
             panelReadAll.Controls.Add(filter);
             panelReadAll.Controls.Add(dataGridView1);
             panelReadAll.Location = new Point(342, 212);
@@ -321,6 +324,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(readMassage);
             panel4.Controls.Add(dataGridView2);
             panel4.Controls.Add(readId);
             panel4.Controls.Add(button1);
@@ -331,10 +335,20 @@
             panel4.TabIndex = 19;
             panel4.Paint += panel4_Paint;
             // 
+            // readMassage
+            // 
+            readMassage.AutoSize = true;
+            readMassage.Location = new Point(123, 213);
+            readMassage.Name = "readMassage";
+            readMassage.Size = new Size(95, 20);
+            readMassage.TabIndex = 22;
+            readMassage.Text = "לקוח לא קיים";
+            readMassage.Click += readMassage_Click;
+            // 
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(56, 130);
+            dataGridView2.Location = new Point(67, 81);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(172, 108);
@@ -343,7 +357,7 @@
             // 
             // readId
             // 
-            readId.Location = new Point(78, 56);
+            readId.Location = new Point(25, 13);
             readId.Name = "readId";
             readId.Size = new Size(150, 27);
             readId.TabIndex = 21;
@@ -351,7 +365,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(56, 89);
+            button1.Location = new Point(71, 46);
             button1.Name = "button1";
             button1.Size = new Size(170, 29);
             button1.TabIndex = 20;
@@ -362,7 +376,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(114, 24);
+            label3.Location = new Point(195, 4);
             label3.Name = "label3";
             label3.Size = new Size(82, 20);
             label3.TabIndex = 14;
@@ -381,6 +395,16 @@
             panelCenter.TabIndex = 20;
             panelCenter.Paint += panelCenter_Paint;
             // 
+            // readAllMassage
+            // 
+            readAllMassage.AutoSize = true;
+            readAllMassage.Location = new Point(37, 199);
+            readAllMassage.Name = "readAllMassage";
+            readAllMassage.Size = new Size(183, 20);
+            readAllMassage.TabIndex = 23;
+            readAllMassage.Text = "לא קיימים לקוחות במערכת";
+            readAllMassage.Click += readAllMassage_Click;
+            // 
             // customers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -397,6 +421,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)id).EndInit();
             panelReadAll.ResumeLayout(false);
+            panelReadAll.PerformLayout();
             panel3.ResumeLayout(false);
             panelTitle.ResumeLayout(false);
             panelTitle.PerformLayout();
@@ -444,5 +469,7 @@
         private Button button1;
         private NumericUpDown readId;
         private Panel panelCenter;
+        private Label readMassage;
+        private Label readAllMassage;
     }
 }

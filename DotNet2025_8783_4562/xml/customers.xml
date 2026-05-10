@@ -36,4 +36,10 @@
     <Address>חושן</Address>
     <Phone>0337645599</Phone>
   </Customer>
+  <Customer>
+    <CustomerId>100</CustomerId>
+    <CustomerName>יהודית</CustomerName>
+    <Address>מודיעין עלית</Address>
+    <Phone>089151009</Phone>
+  </Customer>
 </ArrayOfCustomer>
