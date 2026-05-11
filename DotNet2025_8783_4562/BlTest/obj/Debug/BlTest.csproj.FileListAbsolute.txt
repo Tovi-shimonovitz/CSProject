@@ -15,3 +15,20 @@ C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.pdb
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\CSProject\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\ref\BlTest.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\bin\BlTest.exe
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\bin\BlTest.deps.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\bin\BlTest.runtimeconfig.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\bin\BlTest.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\bin\BlTest.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.sourcelink.json
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.csproj.Up2Date
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\refint\BlTest.dll
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.pdb
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BlTest\obj\Debug\ref\BlTest.dll

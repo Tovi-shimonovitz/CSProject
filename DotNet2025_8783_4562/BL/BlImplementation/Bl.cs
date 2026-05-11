@@ -10,6 +10,6 @@ namespace BL.BlImplementation
 
         public IProduct Product => new ProductImplementation();
 
-        public ISale Sale => throw new NotImplementedException();
+        public ISale Sale => new SaleImplementation();
     }
 }

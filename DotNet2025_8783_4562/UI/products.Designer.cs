@@ -32,11 +32,11 @@
             back = new Button();
             panelCenter = new Panel();
             panelDetailes = new Panel();
+            massageCreate = new Label();
             updateId = new NumericUpDown();
             stock = new NumericUpDown();
             price = new NumericUpDown();
             category = new ComboBox();
-            massageCreate = new Label();
             endCreate = new Button();
             panel2 = new Panel();
             label2 = new Label();
@@ -89,7 +89,7 @@
             // 
             // back
             // 
-            back.Location = new Point(1609, 771);
+            back.Location = new Point(315, 2);
             back.Margin = new Padding(5);
             back.Name = "back";
             back.Size = new Size(265, 46);
@@ -104,77 +104,77 @@
             panelCenter.Controls.Add(panelRead);
             panelCenter.Controls.Add(panelDelete);
             panelCenter.Controls.Add(panelReadAll);
-            panelCenter.Location = new Point(5, 166);
+            panelCenter.Location = new Point(14, 58);
             panelCenter.Margin = new Padding(5);
             panelCenter.Name = "panelCenter";
-            panelCenter.Size = new Size(1483, 704);
+            panelCenter.Size = new Size(1707, 801);
             panelCenter.TabIndex = 29;
             // 
             // panelDetailes
             // 
+            panelDetailes.Controls.Add(massageCreate);
             panelDetailes.Controls.Add(updateId);
             panelDetailes.Controls.Add(stock);
             panelDetailes.Controls.Add(price);
             panelDetailes.Controls.Add(category);
-            panelDetailes.Controls.Add(massageCreate);
             panelDetailes.Controls.Add(endCreate);
             panelDetailes.Controls.Add(panel2);
             panelDetailes.Controls.Add(label2);
             panelDetailes.Controls.Add(name);
-            panelDetailes.Location = new Point(1017, 91);
+            panelDetailes.Location = new Point(1017, 5);
             panelDetailes.Margin = new Padding(5);
             panelDetailes.Name = "panelDetailes";
-            panelDetailes.Size = new Size(461, 498);
+            panelDetailes.Size = new Size(664, 498);
             panelDetailes.TabIndex = 14;
-            // 
-            // updateId
-            // 
-            updateId.Location = new Point(86, 57);
-            updateId.Name = "updateId";
-            updateId.Size = new Size(240, 39);
-            updateId.TabIndex = 23;
-            updateId.ValueChanged += updateId_ValueChanged;
-            // 
-            // stock
-            // 
-            stock.Location = new Point(89, 296);
-            stock.Name = "stock";
-            stock.Size = new Size(240, 39);
-            stock.TabIndex = 22;
-            // 
-            // price
-            // 
-            price.Location = new Point(86, 248);
-            price.Name = "price";
-            price.Size = new Size(240, 39);
-            price.TabIndex = 21;
-            // 
-            // category
-            // 
-            category.FormattingEnabled = true;
-            category.Items.AddRange(new object[] { "WATCH", "DISH", "BAG", "BEAUTY", "FLOWER" });
-            category.Location = new Point(87, 194);
-            category.Name = "category";
-            category.Size = new Size(242, 40);
-            category.TabIndex = 20;
-            category.SelectedIndexChanged += category_SelectedIndexChanged;
             // 
             // massageCreate
             // 
             massageCreate.AutoSize = true;
-            massageCreate.Location = new Point(75, 394);
+            massageCreate.Location = new Point(75, 407);
             massageCreate.Margin = new Padding(5, 0, 5, 0);
             massageCreate.Name = "massageCreate";
             massageCreate.Size = new Size(233, 32);
             massageCreate.TabIndex = 19;
             massageCreate.Text = "המוצר עודכן בהצלחה";
             // 
+            // updateId
+            // 
+            updateId.Location = new Point(9, 57);
+            updateId.Name = "updateId";
+            updateId.Size = new Size(655, 39);
+            updateId.TabIndex = 23;
+            updateId.ValueChanged += updateId_ValueChanged;
+            // 
+            // stock
+            // 
+            stock.Location = new Point(11, 296);
+            stock.Name = "stock";
+            stock.Size = new Size(657, 39);
+            stock.TabIndex = 22;
+            // 
+            // price
+            // 
+            price.Location = new Point(11, 248);
+            price.Name = "price";
+            price.Size = new Size(650, 39);
+            price.TabIndex = 21;
+            // 
+            // category
+            // 
+            category.FormattingEnabled = true;
+            category.Items.AddRange(new object[] { "WATCH", "DISH", "BAG", "BEAUTY", "FLOWER" });
+            category.Location = new Point(11, 194);
+            category.Name = "category";
+            category.Size = new Size(657, 40);
+            category.TabIndex = 20;
+            category.SelectedIndexChanged += category_SelectedIndexChanged;
+            // 
             // endCreate
             // 
-            endCreate.Location = new Point(75, 343);
+            endCreate.Location = new Point(9, 343);
             endCreate.Margin = new Padding(5);
             endCreate.Name = "endCreate";
-            endCreate.Size = new Size(254, 46);
+            endCreate.Size = new Size(655, 46);
             endCreate.TabIndex = 18;
             endCreate.Text = "הטען נתונים";
             endCreate.UseVisualStyleBackColor = true;
@@ -191,7 +191,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 14);
+            label2.Location = new Point(75, 14);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
             label2.Size = new Size(409, 32);
@@ -201,10 +201,10 @@
             // 
             // name
             // 
-            name.Location = new Point(87, 128);
+            name.Location = new Point(11, 128);
             name.Margin = new Padding(5);
             name.Name = "name";
-            name.Size = new Size(201, 39);
+            name.Size = new Size(657, 39);
             name.TabIndex = 10;
             // 
             // panelRead
@@ -214,16 +214,16 @@
             panelRead.Controls.Add(readId);
             panelRead.Controls.Add(button1);
             panelRead.Controls.Add(label3);
-            panelRead.Location = new Point(61, 265);
+            panelRead.Location = new Point(5, 352);
             panelRead.Margin = new Padding(5);
             panelRead.Name = "panelRead";
-            panelRead.Size = new Size(486, 414);
+            panelRead.Size = new Size(874, 414);
             panelRead.TabIndex = 19;
             // 
             // readMassage
             // 
             readMassage.AutoSize = true;
-            readMassage.Location = new Point(200, 341);
+            readMassage.Location = new Point(355, 359);
             readMassage.Margin = new Padding(5, 0, 5, 0);
             readMassage.Name = "readMassage";
             readMassage.Size = new Size(150, 32);
@@ -233,27 +233,28 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(109, 130);
+            dataGridView2.Dock = DockStyle.Fill;
+            dataGridView2.Location = new Point(0, 0);
             dataGridView2.Margin = new Padding(5);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(280, 173);
+            dataGridView2.Size = new Size(874, 414);
             dataGridView2.TabIndex = 21;
             // 
             // readId
             // 
-            readId.Location = new Point(41, 21);
+            readId.Location = new Point(36, 59);
             readId.Margin = new Padding(5);
             readId.Name = "readId";
-            readId.Size = new Size(244, 39);
+            readId.Size = new Size(801, 39);
             readId.TabIndex = 21;
             // 
             // button1
             // 
-            button1.Location = new Point(115, 74);
+            button1.Location = new Point(41, 108);
             button1.Margin = new Padding(5);
             button1.Name = "button1";
-            button1.Size = new Size(276, 46);
+            button1.Size = new Size(796, 46);
             button1.TabIndex = 20;
             button1.Text = "הטען נתונים";
             button1.UseVisualStyleBackColor = true;
@@ -262,7 +263,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(317, 6);
+            label3.Location = new Point(400, 17);
             label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
             label3.Size = new Size(132, 32);
@@ -275,16 +276,16 @@
             panelDelete.Controls.Add(endDelete);
             panelDelete.Controls.Add(onlyId);
             panelDelete.Controls.Add(label4);
-            panelDelete.Location = new Point(557, 5);
+            panelDelete.Location = new Point(66, 5);
             panelDelete.Margin = new Padding(5);
             panelDelete.Name = "panelDelete";
-            panelDelete.Size = new Size(450, 272);
+            panelDelete.Size = new Size(941, 272);
             panelDelete.TabIndex = 18;
             // 
             // massageDelete
             // 
             massageDelete.AutoSize = true;
-            massageDelete.Location = new Point(110, 219);
+            massageDelete.Location = new Point(312, 212);
             massageDelete.Margin = new Padding(5, 0, 5, 0);
             massageDelete.Name = "massageDelete";
             massageDelete.Size = new Size(267, 32);
@@ -293,10 +294,10 @@
             // 
             // endDelete
             // 
-            endDelete.Location = new Point(176, 136);
+            endDelete.Location = new Point(170, 145);
             endDelete.Margin = new Padding(5);
             endDelete.Name = "endDelete";
-            endDelete.Size = new Size(153, 46);
+            endDelete.Size = new Size(642, 46);
             endDelete.TabIndex = 19;
             endDelete.Text = "הטען נתונים";
             endDelete.UseVisualStyleBackColor = true;
@@ -304,16 +305,16 @@
             // 
             // onlyId
             // 
-            onlyId.Location = new Point(110, 82);
+            onlyId.Location = new Point(161, 96);
             onlyId.Margin = new Padding(5);
             onlyId.Name = "onlyId";
-            onlyId.Size = new Size(244, 39);
+            onlyId.Size = new Size(690, 39);
             onlyId.TabIndex = 18;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(195, 22);
+            label4.Location = new Point(381, 30);
             label4.Margin = new Padding(5, 0, 5, 0);
             label4.Name = "label4";
             label4.Size = new Size(132, 32);
@@ -325,16 +326,16 @@
             panelReadAll.Controls.Add(readAllMassage);
             panelReadAll.Controls.Add(filter);
             panelReadAll.Controls.Add(dataGridView1);
-            panelReadAll.Location = new Point(557, 287);
+            panelReadAll.Location = new Point(900, 412);
             panelReadAll.Margin = new Padding(5);
             panelReadAll.Name = "panelReadAll";
-            panelReadAll.Size = new Size(408, 355);
+            panelReadAll.Size = new Size(781, 355);
             panelReadAll.TabIndex = 15;
             // 
             // readAllMassage
             // 
             readAllMassage.AutoSize = true;
-            readAllMassage.Location = new Point(60, 318);
+            readAllMassage.Location = new Point(228, 322);
             readAllMassage.Margin = new Padding(5, 0, 5, 0);
             readAllMassage.Name = "readAllMassage";
             readAllMassage.Size = new Size(290, 32);
@@ -343,10 +344,10 @@
             // 
             // filter
             // 
-            filter.Location = new Point(76, 267);
+            filter.Location = new Point(60, 271);
             filter.Margin = new Padding(5);
             filter.Name = "filter";
-            filter.Size = new Size(301, 46);
+            filter.Size = new Size(686, 46);
             filter.TabIndex = 8;
             filter.Text = "מוצרים מעל 100 ש\"ח";
             filter.UseVisualStyleBackColor = true;
@@ -355,11 +356,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 34);
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Margin = new Padding(5);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(398, 227);
+            dataGridView1.Size = new Size(781, 355);
             dataGridView1.TabIndex = 7;
             // 
             // actions
@@ -369,15 +371,15 @@
             actions.Controls.Add(create);
             actions.Controls.Add(delete);
             actions.Controls.Add(update);
-            actions.Location = new Point(1498, 23);
+            actions.Location = new Point(1731, 9);
             actions.Margin = new Padding(5);
             actions.Name = "actions";
-            actions.Size = new Size(411, 546);
+            actions.Size = new Size(499, 836);
             actions.TabIndex = 27;
             // 
             // read
             // 
-            read.Location = new Point(159, 91);
+            read.Location = new Point(214, 136);
             read.Margin = new Padding(5);
             read.Name = "read";
             read.Size = new Size(153, 46);
@@ -388,10 +390,10 @@
             // 
             // readAllProducts
             // 
-            readAllProducts.Location = new Point(52, 182);
+            readAllProducts.Location = new Point(129, 266);
             readAllProducts.Margin = new Padding(5);
             readAllProducts.Name = "readAllProducts";
-            readAllProducts.Size = new Size(260, 46);
+            readAllProducts.Size = new Size(307, 46);
             readAllProducts.TabIndex = 5;
             readAllProducts.Text = "הצגת כל המוצרים";
             readAllProducts.UseVisualStyleBackColor = true;
@@ -399,7 +401,7 @@
             // 
             // create
             // 
-            create.Location = new Point(52, 269);
+            create.Location = new Point(178, 405);
             create.Margin = new Padding(5);
             create.Name = "create";
             create.Size = new Size(244, 46);
@@ -410,7 +412,7 @@
             // 
             // delete
             // 
-            delete.Location = new Point(143, 445);
+            delete.Location = new Point(229, 682);
             delete.Margin = new Padding(5);
             delete.Name = "delete";
             delete.Size = new Size(169, 46);
@@ -421,10 +423,10 @@
             // 
             // update
             // 
-            update.Location = new Point(159, 358);
+            update.Location = new Point(214, 534);
             update.Margin = new Padding(5);
             update.Name = "update";
-            update.Size = new Size(153, 46);
+            update.Size = new Size(170, 46);
             update.TabIndex = 3;
             update.Text = "עדכון מוצר";
             update.UseVisualStyleBackColor = true;
@@ -434,7 +436,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1936, 909);
+            ClientSize = new Size(2244, 909);
             Controls.Add(back);
             Controls.Add(panelCenter);
             Controls.Add(actions);

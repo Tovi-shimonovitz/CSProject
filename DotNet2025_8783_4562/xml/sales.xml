@@ -1,39 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Sale>
-    <SaleId>1</SaleId>
-    <ProductId>1</ProductId>
-    <AmountForSale>1</AmountForSale>
-    <PriceSale>80</PriceSale>
-    <JustForClub>true</JustForClub>
-    <SaleStart>2026-05-05T23:00:56.4535668+03:00</SaleStart>
-    <SaleEnd>2026-06-05T23:00:56.462343+03:00</SaleEnd>
-  </Sale>
-  <Sale>
-    <SaleId>2</SaleId>
-    <ProductId>2</ProductId>
-    <AmountForSale>2</AmountForSale>
-    <PriceSale>150</PriceSale>
-    <JustForClub>false</JustForClub>
-    <SaleStart>2026-05-05T23:00:57.4651797+03:00</SaleStart>
-    <SaleEnd>2026-07-05T23:00:57.4651847+03:00</SaleEnd>
-  </Sale>
-  <Sale>
-    <SaleId>3</SaleId>
-    <ProductId>3</ProductId>
-    <AmountForSale>3</AmountForSale>
-    <PriceSale>25</PriceSale>
-    <JustForClub>true</JustForClub>
-    <SaleStart>2025-12-24T00:00:00</SaleStart>
-    <SaleEnd>2026-12-12T00:00:00</SaleEnd>
-  </Sale>
-  <Sale>
-    <SaleId>4</SaleId>
-    <ProductId>4</ProductId>
-    <AmountForSale>4</AmountForSale>
-    <PriceSale>18</PriceSale>
-    <JustForClub>false</JustForClub>
-    <SaleStart>2025-11-22T00:00:00</SaleStart>
-    <SaleEnd>2026-02-22T00:00:00</SaleEnd>
-  </Sale>
+  
 </ArrayOfSale>
