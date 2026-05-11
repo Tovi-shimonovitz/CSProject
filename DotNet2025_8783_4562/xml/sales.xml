@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Sale>
-    <SaleId>1</SaleId>
-    <ProductId>1</ProductId>
-    <AmountForSale>1</AmountForSale>
-    <PriceSale>80</PriceSale>
-    <JustForClub>true</JustForClub>
-    <SaleStart>2026-05-05T23:00:56.4535668+03:00</SaleStart>
-    <SaleEnd>2026-06-05T23:00:56.462343+03:00</SaleEnd>
-  </Sale>
-  <Sale>
     <SaleId>2</SaleId>
     <ProductId>2</ProductId>
     <AmountForSale>2</AmountForSale>
@@ -35,5 +26,14 @@
     <JustForClub>false</JustForClub>
     <SaleStart>2025-11-22T00:00:00</SaleStart>
     <SaleEnd>2026-02-22T00:00:00</SaleEnd>
+  </Sale>
+  <Sale>
+    <SaleId>17</SaleId>
+    <ProductId>1</ProductId>
+    <AmountForSale>3</AmountForSale>
+    <PriceSale>20</PriceSale>
+    <JustForClub>true</JustForClub>
+    <SaleStart xsi:nil="true" />
+    <SaleEnd xsi:nil="true" />
   </Sale>
 </ArrayOfSale>

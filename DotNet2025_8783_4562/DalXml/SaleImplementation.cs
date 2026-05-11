@@ -46,7 +46,7 @@ namespace Dal
         {
             List<Sale> list = ReadAll();
             Sale item = list.FirstOrDefault(s=> s.SaleId == id);
-            if (item != null) {
+            if (item == null) {
                  throw new ObjectNotFoundExeption($"this  sale not exists");
             }
             list.Remove(item);
