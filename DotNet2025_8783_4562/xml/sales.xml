@@ -36,4 +36,22 @@
     <SaleStart xsi:nil="true" />
     <SaleEnd xsi:nil="true" />
   </Sale>
+  <Sale>
+    <SaleId>1</SaleId>
+    <ProductId>3</ProductId>
+    <AmountForSale>4</AmountForSale>
+    <PriceSale>1</PriceSale>
+    <JustForClub>false</JustForClub>
+    <SaleStart xsi:nil="true" />
+    <SaleEnd xsi:nil="true" />
+  </Sale>
+  <Sale>
+    <SaleId>0</SaleId>
+    <ProductId>1</ProductId>
+    <AmountForSale>1</AmountForSale>
+    <PriceSale>1</PriceSale>
+    <JustForClub>false</JustForClub>
+    <SaleStart xsi:nil="true" />
+    <SaleEnd xsi:nil="true" />
+  </Sale>
 </ArrayOfSale>

@@ -33,9 +33,10 @@ namespace Dal
         }
         public int Create(Sale item)
         {
+            item = item with { SaleId = Config.GetSaleId};
             List<Sale> list = ReadAll();
-            if (list.FirstOrDefault(s => s.SaleId == item.SaleId) != null)
-                throw new ObjectExistExeption($"this  sale already exists exeption");
+            //if (list.FirstOrDefault(s => s.SaleId == item.SaleId) != null)
+            //    throw new ObjectExistExeption($"this  sale already exists exeption");
             list.Add(item);
             Save(list);
             return item.SaleId;

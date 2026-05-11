@@ -17,7 +17,7 @@ internal static class Config
         get
         {
 
-            XElement root = XElement.Load(nameConfigFile);
+            XElement root = XElement.Load(@"../xml/data-config.xml");
             int currentId = int.Parse(root.Element("SaleId").Value);
 
             root.Element("SaleId").SetValue((currentId + 1).ToString());
