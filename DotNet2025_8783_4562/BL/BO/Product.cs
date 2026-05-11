@@ -9,8 +9,8 @@ namespace BL.BO;
 
 public class Product
 {
-    public int ProductId { get; init; }
-    public string? ProductName { get; init; }
+    public int ProductId { get; set; }
+    public string? ProductName { get; set; }
     public Category? Category { get; set; }
     public double Price { get; set; }
     public int InStock { get; set; }

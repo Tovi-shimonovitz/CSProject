@@ -9,7 +9,7 @@ namespace Dal;
 
 internal static class Config
 {
-    private static string nameConfigFile = "data-config";
+    private static string nameConfigFile = @"../xml/data-config.xml";
     private static int staticSaleId;
     public static int GetSaleId
     {
@@ -17,7 +17,7 @@ internal static class Config
         get
         {
 
-            XElement root = XElement.Load(nameConfigFile);
+            XElement root = XElement.Load(@"../xml/data-config.xml");
             int currentId = int.Parse(root.Element("SaleId").Value);
 
             root.Element("SaleId").SetValue((currentId + 1).ToString());
@@ -34,7 +34,9 @@ internal static class Config
         {
             XElement root= XElement.Load(nameConfigFile);
             int currentProductId = int.Parse(root.Element("ProductId").Value);
-            root.Element("ProductId").SetValue((currentProductId + 1).ToString());
+            root.Element("ProductId").SetValue((currentProductId + 1));
+            root.Save(nameConfigFile);
+
             return currentProductId;
         }
     }

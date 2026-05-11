@@ -37,8 +37,10 @@ namespace Dal
         public int Create(Product item)
         {
             List<Product> products = GetAllProducts();
-            if (products.Any(p => p.ProductId == item.ProductId))
-                throw new ObjectExistExeption("this product already exists exeption");
+            item = item with { ProductId = Config.GetProductId };
+
+            //if (products.Any(p => p.ProductId == item.ProductId))
+            //    throw new ObjectExistExeption("this product already exists exeption");
             products.Add(item);
             save(products);
             return item.ProductId;
