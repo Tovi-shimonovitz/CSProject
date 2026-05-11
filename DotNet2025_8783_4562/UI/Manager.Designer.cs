@@ -31,6 +31,7 @@
             products = new Button();
             customers = new Button();
             sales = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // products
@@ -63,16 +64,28 @@
             sales.UseVisualStyleBackColor = true;
             sales.Click += sales_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(335, 383);
+            button1.Name = "button1";
+            button1.Size = new Size(163, 29);
+            button1.TabIndex = 26;
+            button1.Text = "לחזרה לתפריט הראשי";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Manager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(sales);
             Controls.Add(customers);
             Controls.Add(products);
             Name = "Manager";
             Text = "Manager";
+            Load += Manager_Load;
             ResumeLayout(false);
         }
 
@@ -81,5 +94,6 @@
         private Button products;
         private Button customers;
         private Button sales;
+        private Button button1;
     }
 }

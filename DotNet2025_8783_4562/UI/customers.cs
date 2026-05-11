@@ -45,7 +45,6 @@ namespace UI
             panel1.Visible = false;
             panelDelete.Visible = false;
             panel4.Visible = false;
-            // dataGridView2.Visible = false;
         }
         #endregion
 
@@ -206,5 +205,13 @@ namespace UI
         private void readMassage_Click(object sender, EventArgs e) { }
         private void readAllMassage_Click(object sender, EventArgs e) { }
         #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Manager nextForm = new Manager();
+
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace UI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Seller nextForm = new Seller();
+            back nextForm = new back();
 
             nextForm.Show();
 

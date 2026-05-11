@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCustomer>
   <Customer>
-    <CustomerId>2</CustomerId>
-    <CustomerName>yehudit</CustomerName>
-    <Address>gefen</Address>
-    <Phone>0534178779</Phone>
-  </Customer>
-  <Customer>
     <CustomerId>4</CustomerId>
     <CustomerName>nebtrg</CustomerName>
     <Address>etnbr</Address>
@@ -38,8 +32,20 @@
   </Customer>
   <Customer>
     <CustomerId>1</CustomerId>
-    <CustomerName>תמר</CustomerName>
-    <Address>ח"ח</Address>
-    <Phone>0534155554</Phone>
+    <CustomerName>טובי</CustomerName>
+    <Address>מסילת יוסף</Address>
+    <Phone>543128542</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>2</CustomerId>
+    <CustomerName>טובי</CustomerName>
+    <Address>מסילת יוסף</Address>
+    <Phone>543128542</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>88</CustomerId>
+    <CustomerName>עאכטו</CustomerName>
+    <Address>בעיעח</Address>
+    <Phone>ל</Phone>
   </Customer>
 </ArrayOfCustomer>

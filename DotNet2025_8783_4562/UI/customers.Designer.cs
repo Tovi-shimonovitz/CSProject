@@ -46,6 +46,7 @@
             id = new NumericUpDown();
             panel2 = new Panel();
             panelReadAll = new Panel();
+            readAllMassage = new Label();
             panel3 = new Panel();
             panelTitle = new Panel();
             panelDelete = new Panel();
@@ -60,7 +61,7 @@
             button1 = new Button();
             label3 = new Label();
             panelCenter = new Panel();
-            readAllMassage = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)id).BeginInit();
@@ -251,6 +252,16 @@
             panelReadAll.TabIndex = 15;
             panelReadAll.Paint += panelReadAll_Paint;
             // 
+            // readAllMassage
+            // 
+            readAllMassage.AutoSize = true;
+            readAllMassage.Location = new Point(37, 199);
+            readAllMassage.Name = "readAllMassage";
+            readAllMassage.Size = new Size(183, 20);
+            readAllMassage.TabIndex = 23;
+            readAllMassage.Text = "לא קיימים לקוחות במערכת";
+            readAllMassage.Click += readAllMassage_Click;
+            // 
             // panel3
             // 
             panel3.Controls.Add(read);
@@ -267,7 +278,7 @@
             // panelTitle
             // 
             panelTitle.Controls.Add(title);
-            panelTitle.Location = new Point(525, 12);
+            panelTitle.Location = new Point(530, 12);
             panelTitle.Name = "panelTitle";
             panelTitle.Size = new Size(250, 50);
             panelTitle.TabIndex = 17;
@@ -395,21 +406,22 @@
             panelCenter.TabIndex = 20;
             panelCenter.Paint += panelCenter_Paint;
             // 
-            // readAllMassage
+            // button2
             // 
-            readAllMassage.AutoSize = true;
-            readAllMassage.Location = new Point(37, 199);
-            readAllMassage.Name = "readAllMassage";
-            readAllMassage.Size = new Size(183, 20);
-            readAllMassage.TabIndex = 23;
-            readAllMassage.Text = "לא קיימים לקוחות במערכת";
-            readAllMassage.Click += readAllMassage_Click;
+            button2.Location = new Point(873, 470);
+            button2.Name = "button2";
+            button2.Size = new Size(163, 29);
+            button2.TabIndex = 26;
+            button2.Text = "לחזרה לתפריט הקודם";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // customers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1072, 514);
+            Controls.Add(button2);
             Controls.Add(panelCenter);
             Controls.Add(panelTitle);
             Controls.Add(panel3);
@@ -471,5 +483,6 @@
         private Panel panelCenter;
         private Label readMassage;
         private Label readAllMassage;
+        private Button button2;
     }
 }
