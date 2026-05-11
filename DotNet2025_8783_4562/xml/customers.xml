@@ -1,22 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCustomer>
   <Customer>
-    <CustomerId>1</CustomerId>
-    <CustomerName>tovi</CustomerName>
-    <Address>Mesilat Yosef</Address>
-    <Phone>0534168961</Phone>
-  </Customer>
-  <Customer>
     <CustomerId>2</CustomerId>
     <CustomerName>yehudit</CustomerName>
     <Address>gefen</Address>
     <Phone>0534178779</Phone>
-  </Customer>
-  <Customer>
-    <CustomerId>3</CustomerId>
-    <CustomerName>rnh</CustomerName>
-    <Address>rerynd</Address>
-    <Phone>465132</Phone>
   </Customer>
   <Customer>
     <CustomerId>4</CustomerId>
@@ -41,5 +29,17 @@
     <CustomerName>יהודית</CustomerName>
     <Address>מודיעין עלית</Address>
     <Phone>089151009</Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>3</CustomerId>
+    <CustomerName>חני</CustomerName>
+    <Address></Address>
+    <Phone></Phone>
+  </Customer>
+  <Customer>
+    <CustomerId>1</CustomerId>
+    <CustomerName>תמר</CustomerName>
+    <Address>ח"ח</Address>
+    <Phone>0534155554</Phone>
   </Customer>
 </ArrayOfCustomer>
