@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Product>
-    <ProductId>7</ProductId>
-    <ProductName>קישוט מדף</ProductName>
+    <ProductId>10</ProductId>
+    <ProductName>fgyth</ProductName>
     <Category>BEAUTY</Category>
-    <Price>120</Price>
-    <Amount>10</Amount>
-  </Product>
-  <Product>
-    <ProductId>8</ProductId>
-    <ProductName>גיטרה</ProductName>
-    <Category>DISH</Category>
-    <Price>1000</Price>
-    <Amount>2</Amount>
+    <Price>55</Price>
+    <Amount>12</Amount>
   </Product>
   <Product>
     <ProductId>9</ProductId>
     <ProductName>מראת כיס</ProductName>
     <Category>BEAUTY</Category>
     <Price>15</Price>
-    <Amount>29</Amount>
+    <Amount>26</Amount>
+  </Product>
+  <Product>
+    <ProductId>7</ProductId>
+    <ProductName />
+    <Category>DISH</Category>
+    <Price>55</Price>
+    <Amount>12</Amount>
   </Product>
 </ArrayOfProduct>

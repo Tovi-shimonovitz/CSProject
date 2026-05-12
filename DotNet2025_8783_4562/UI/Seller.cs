@@ -186,6 +186,7 @@ namespace UI
                 MessageBox.Show("הזמתנך בוצעה בהצלחה שמחנו לתת שרות🌟🌟🌟");
                 startOrder.Visible = false;
                 newOrder.Visible = true;
+                order = new Order();
 
             }
             catch (BlInvalidInputException)

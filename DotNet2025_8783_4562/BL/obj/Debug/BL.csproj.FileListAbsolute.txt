@@ -40,3 +40,17 @@ C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProjec
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BL\obj\Debug\refint\BL.dll
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.pdb
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\BL\obj\Debug\ref\BL.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\BL.deps.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\BL.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\BL.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.AssemblyInfo.cs
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.sourcelink.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.csproj.Up2Date
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\refint\BL.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\BL.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\BL\obj\Debug\ref\BL.dll

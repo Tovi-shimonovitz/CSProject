@@ -46,3 +46,15 @@ C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProjec
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\refint\Tools.dll
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.pdb
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\ref\Tools.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\bin\Debug\net8.0\Tools.deps.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\bin\Debug\net8.0\Tools.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\bin\Debug\net8.0\Tools.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.AssemblyInfoInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.AssemblyInfo.cs
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.sourcelink.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\refint\Tools.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\Tools.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\Tools\obj\Debug\net8.0\ref\Tools.dll

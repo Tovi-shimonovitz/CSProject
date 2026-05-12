@@ -54,3 +54,17 @@ C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProjec
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\refint\DalXml.dll
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.pdb
 C:\Users\USER\Desktop\טובי\תכנות\יד\C#\פרויקט סופי\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\ref\DalXml.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.deps.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\bin\Debug\net8.0\DalXml.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.AssemblyReference.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.AssemblyInfoInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.AssemblyInfo.cs
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.sourcelink.json
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.csproj.Up2Date
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\refint\DalXml.dll
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\DalXml.pdb
+Z:\יד תשפו\סטרו יהודית\c#\פרויקט גמור\CSProject\DotNet2025_8783_4562\DalXml\obj\Debug\net8.0\ref\DalXml.dll
